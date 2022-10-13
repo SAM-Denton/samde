@@ -36,8 +36,7 @@ touch $HOME/.cache/zsh/history
 git clone --separate-git-dir=$HOME/.config/dots https://gitlab.com/samdenton/dots.git tmpdots
 rsync --recursive --verbose --exclude '.git' tmpdots/ $HOME/
 rm -rf tmpdots
-alias dot='/usr/bin/git --git-dir=$HOME/.config/dots --work-tree=$HOME'
-dot config --local status.showUntrackedFiles no
+/usr/bin/git --git-dir=$HOME/.config/dots --work-tree=$HOME config --local status.showUntrackedFiles no
 
 # Cloning my suckless utils and compiling
 
