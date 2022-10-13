@@ -17,7 +17,7 @@ sudo sed -i "s/-j2/-j$(nproc)/;/^#MAKEFLAGS/s/^#//" /etc/makepkg.conf
 
 # Intalling base packages
 
-sudo pacman --noconfirm --needed -Syu - < base.txt || error "Failed to install packages"
+sudo pacman --noconfirm --needed -Syu - < pkgs.txt || error "Failed to install packages"
 
 # Cloning and installing the yay AUR helper
 
