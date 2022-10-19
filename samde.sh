@@ -1,9 +1,9 @@
 #!/bin/sh
 
-utils=(dwm dmenu st slstatus dnoted)
+utils=(dwm dmenu st slstatus dnote)
 folders=(.local .config .cache .cache/zsh)
 
-for i in "${folders[@]}"; do [ -d $HOME/$i ] || mkdir $HOME/.$i; done
+for i in "${folders[@]}"; do [ -d $HOME/$i ] || mkdir $HOME/$i; done
 
 sudo sed -i "93,94s/#//g;33s/#//g;37s/#//g" /etc/pacman.conf
 sudo sed -i "/#VerbosePkgLists/a ILoveCandy" /etc/pacman.conf
