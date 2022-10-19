@@ -1,0 +1,12 @@
+ttf-anonymous-pro
+ttf-hack
+ttf-nerd-fonts-symbols-2048-em
+slock
+rsync
+libxft
+xwallpaper
+unclutter
+picom
+sxhkd
+xorg-xkill
+xorg-xev
