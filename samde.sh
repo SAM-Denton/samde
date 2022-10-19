@@ -3,13 +3,14 @@
 utils=(dwm dmenu st slstatus dnoted)
 folders=(.local .config .cache .cache/zsh)
 
-for i in "${folders[@]}"; do ;[ -d $HOME/$i ] || mkdir $HOME/.$i; done
+for i in "${folders[@]}"; do [ -d $HOME/$i ] || mkdir $HOME/.$i; done
 
 sudo sed -i "93,94s/#//g;33s/#//g;37s/#//g" /etc/pacman.conf
 sudo sed -i "/#VerbosePkgLists/a ILoveCandy" /etc/pacman.conf
 sudo sed -i "s/-j2/-j$(nproc)/;/^#MAKEFLAGS/s/^#//" /etc/makepkg.conf
 
-sudo pacman --noconfirm --needed -Syu - < pkgs.txt core.txt || error "Failed to install packages"
+sudo pacman --noconfirm --needed -Syu - < core.txt || error "Failed to install packages"
+sudo pacman --noconfirm --needed -Syu - < pkgs.txt || error "Failed to install packages"
 
 sudo usermod -s /bin/zsh $USER
 echo "export ZDOTDIR=\"\$HOME\"/.config/zsh" | sudo tee -a /etc/zsh/zshenv
