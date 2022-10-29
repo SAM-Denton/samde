@@ -1,3 +1,17 @@
+ttf-anonymous-pro
+ttf-hack
+ttf-nerd-fonts-symbols-2048-em
+git
+slock
+rsync
+libxft
+xwallpaper
+unclutter
+picom
+sxhkd
+xorg-xkill
+xorg-xev
+
 zsh
 zsh-syntax-highlighting
 zsh-autosuggestions
@@ -29,7 +43,6 @@ zathura
 xclip
 bat
 pamixer
-git
 exa
 yt-dlp
 entr
