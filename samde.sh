@@ -1,7 +1,7 @@
 #!/bin/sh
 
 utils=(dwm dmenu st slstatus dnote)
-folders=(.local .config .cache .cache/zsh)
+folders=(.local .config .cache .cache/zsh .cache/mpd)
 
 # Checking for folders and creating them if they're absent
 for i in "${folders[@]}"; do [ -d $HOME/$i ] || mkdir $HOME/$i; done
@@ -25,6 +25,11 @@ git clone --depth 1 --separate-git-dir=$HOME/.config/dots https://gitlab.com/sam
 rsync --recursive --verbose --exclude '.git' tmpdots/ $HOME/
 rm -rf tmpdots
 /usr/bin/git --git-dir=$HOME/.config/dots --work-tree=$HOME config --local status.showUntrackedFiles no
+ln -sf $HOME/.config/x11/profiles/Default.Xresources $HOME/.config/x11/xresources
+ln -sf $HOME/.config/x11/themes/Kasugano.Xresources $HOME/.config/x11/xcolors
+
+git clone --depth 1 https://gitlab.com/samdenton/wallpapers.git $HOME/.local/share/wallpapers
+ln -sf $HOME/.local/share/wallpapers/wallhaven-pkmj69-HD $HOME/.config/x11/wall
 
 # Cloning my suckless utilities and compiling
 for i in "${utils[@]}"
@@ -44,5 +49,5 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 nvim -c "PlugInstall|q|q"
 
-printf "\033c The script is done. logout or reboot to apply all the changes"
+printf "\033c The script is done. logout or reboot to apply all the changes\n"
 
