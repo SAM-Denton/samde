@@ -29,7 +29,7 @@ ln -sf $HOME/.config/x11/profiles/Default.Xresources $HOME/.config/x11/xresource
 ln -sf $HOME/.config/x11/themes/Kasugano.Xresources $HOME/.config/x11/xcolors
 
 git clone --depth 1 https://gitlab.com/samdenton/wallpapers.git $HOME/.local/share/wallpapers
-ln -sf $HOME/.local/share/wallpapers/wallhaven-pkmj69-HD $HOME/.config/x11/wall
+ln -sf $HOME/.local/share/wallpapers/wallhaven-pkmj69-HD.png $HOME/.config/x11/wall
 
 # Cloning my suckless utilities and compiling
 for i in "${utils[@]}"
