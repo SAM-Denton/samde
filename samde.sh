@@ -41,7 +41,7 @@ done
 # Installing the yay aur helper
 git clone https://aur.archlinux.org/yay-bin
 cd yay-bin && makepkg -si && cd .. && rm -rf yay-bin
-yay -S lf-bin papirus-folders-git
+yay -S papirus-folders-git
 sudo papirus-folders -C indigo
 
 # Installing vim-plug

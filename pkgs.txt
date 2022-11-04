@@ -19,6 +19,7 @@ starship
 
 neovim
 htop
+lf
 
 thunar
 ffmpegthumbnailer
