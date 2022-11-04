@@ -30,7 +30,6 @@ tumbler
 
 lxappearance-gtk3
 materia-gtk-theme
-papirus-icon-theme
 qt5ct
 
 mpv
