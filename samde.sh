@@ -43,13 +43,11 @@ git clone https://aur.archlinux.org/yay-bin
 cd yay-bin && makepkg -si && cd .. && rm -rf yay-bin
 
 # Installing papirus icon theme and folder colors
-wget -qO- https://git.io/papirus-folders-install | env PREFIX=$HOME/.local sh
 wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR="$HOME/.local/share/icons" sh
-papirus-folders -C indigo
+wget -qO- https://git.io/papirus-folders-install | env PREFIX=$HOME/.local sh
+$HOME/.local/bin/papirus-folders -C indigo
 
 # Installing vim-plug
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 nvim -c "PlugInstall|q|q"
-
-printf "\033c The script is done. logout or reboot to apply all the changes\n"

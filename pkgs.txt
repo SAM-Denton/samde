@@ -45,6 +45,7 @@ bat
 pamixer
 exa
 yt-dlp
+wget
 entr
 lsw
 lshw
