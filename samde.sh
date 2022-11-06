@@ -25,7 +25,7 @@ git clone --depth 1 --separate-git-dir=$HOME/.config/dots https://gitlab.com/sam
 rsync --recursive --verbose --exclude '.git' tmpdots/ $HOME/
 rm -rf tmpdots
 /usr/bin/git --git-dir=$HOME/.config/dots --work-tree=$HOME config --local status.showUntrackedFiles no
-ln -sf $HOME/.config/x11/profiles/Default.Xresources $HOME/.config/x11/xresources
+ln -sf $HOME/.config/x11/profiles/1080p-23inch.Xresources $HOME/.config/x11/xresources
 ln -sf $HOME/.config/x11/themes/Kasugano.Xresources $HOME/.config/x11/xcolors
 
 git clone --depth 1 https://gitlab.com/samdenton/wallpapers.git $HOME/.local/share/wallpapers
@@ -41,7 +41,7 @@ done
 # Installing the yay aur helper
 git clone https://aur.archlinux.org/yay-bin
 cd yay-bin && makepkg -si && cd .. && rm -rf yay-bin
-yay -S nsxiv
+yay -S nsxiv devour
 
 # Installing papirus icon theme and folder colors
 wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR="$HOME/.local/share/icons" sh
