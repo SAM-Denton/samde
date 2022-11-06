@@ -41,6 +41,7 @@ done
 # Installing the yay aur helper
 git clone https://aur.archlinux.org/yay-bin
 cd yay-bin && makepkg -si && cd .. && rm -rf yay-bin
+yay -S nsxiv
 
 # Installing papirus icon theme and folder colors
 wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR="$HOME/.local/share/icons" sh

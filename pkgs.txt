@@ -36,7 +36,6 @@ mpv
 mpd
 mpc
 ncmpcpp
-sxiv
 ueberzug
 zathura
 
