@@ -6,8 +6,7 @@ folders=(.local .config .cache .cache/zsh .cache/mpd)
 # Checking for folders and creating them if they're absent
 for i in "${folders[@]}"; do [ -d $HOME/$i ] || mkdir $HOME/$i; done
 
-# Enabling multilib, ILoveCandy and adding the number of cpu threads in makepkg.conf
-sudo sed -i "93,94s/#//g;33s/#//g;37s/#//g" /etc/pacman.conf
+# Enabling ILoveCandy and adding the number of cpu threads in makepkg.conf
 sudo sed -i "/#VerbosePkgLists/a ILoveCandy" /etc/pacman.conf
 sudo sed -i "s/-j2/-j$(nproc)/;/^#MAKEFLAGS/s/^#//" /etc/makepkg.conf
 
@@ -26,7 +25,7 @@ rsync --recursive --verbose --exclude '.git' tmpdots/ $HOME/
 rm -rf tmpdots
 /usr/bin/git --git-dir=$HOME/.config/dots --work-tree=$HOME config --local status.showUntrackedFiles no
 ln -sf $HOME/.config/x11/profiles/1080p-23inch.Xresources $HOME/.config/x11/xresources
-ln -sf $HOME/.config/x11/themes/Kasugano.Xresources $HOME/.config/x11/xcolors
+ln -sf $HOME/.config/x11/colorschemes/Kasugano.Xresources $HOME/.config/x11/xcolors
 
 git clone --depth 1 https://gitlab.com/samdenton/wallpapers.git $HOME/.local/share/wallpapers
 ln -sf $HOME/.local/share/wallpapers/wallhaven-pkmj69-HD.png $HOME/.config/x11/wall
