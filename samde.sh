@@ -20,7 +20,7 @@ echo "export ZDOTDIR=\"\$HOME\"/.config/zsh" | sudo tee -a /etc/zsh/zshenv
 touch $HOME/.cache/zsh/history
 
 # Cloning dotfiles and putting them in .config
-git clone --depth 1 --separate-git-dir=$HOME/.config/dots https://gitlab.com/samdenton/dots.git tmpdots
+git clone --depth 1 --separate-git-dir=$HOME/.config/.dots https://gitlab.com/samdenton/dots.git tmpdots
 rsync --recursive --verbose --exclude '.git' tmpdots/ $HOME/
 rm -rf tmpdots
 /usr/bin/git --git-dir=$HOME/.config/.dots --work-tree=$HOME config --local status.showUntrackedFiles no
@@ -51,3 +51,5 @@ $HOME/.local/bin/papirus-folders -C indigo
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 nvim -c "PlugInstall|q|q"
+
+printf "\033c The script is done. logout or reboot to apply all the changes\n"

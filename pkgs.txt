@@ -21,6 +21,7 @@ neovim
 htop
 nvtop
 lf
+tmux
 
 thunar
 ffmpegthumbnailer
