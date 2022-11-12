@@ -23,7 +23,7 @@ touch $HOME/.cache/zsh/history
 git clone --depth 1 --separate-git-dir=$HOME/.config/dots https://gitlab.com/samdenton/dots.git tmpdots
 rsync --recursive --verbose --exclude '.git' tmpdots/ $HOME/
 rm -rf tmpdots
-/usr/bin/git --git-dir=$HOME/.config/dots --work-tree=$HOME config --local status.showUntrackedFiles no
+/usr/bin/git --git-dir=$HOME/.config/.dots --work-tree=$HOME config --local status.showUntrackedFiles no
 ln -sf $HOME/.config/x11/profiles/1080p-23inch.Xresources $HOME/.config/x11/xresources
 ln -sf $HOME/.config/x11/colorschemes/Kasugano.Xresources $HOME/.config/x11/xcolors
 
