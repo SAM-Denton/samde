@@ -6,6 +6,7 @@ slock
 rsync
 libxft
 xwallpaper
+python-pywal
 unclutter
 picom
 sxhkd
@@ -37,6 +38,7 @@ qt5ct
 mpv
 mpd
 mpc
+pulsemixer
 ncmpcpp
 ueberzug
 zathura
