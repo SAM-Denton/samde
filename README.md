@@ -37,6 +37,32 @@ cd samde
 | `Mod + shift + 0`         |  make window visible on all tags                     |
 | `Mod + F5`                |  reload Xresources colors                            |
 
+### Sxhkd keybinds
+|Keybind                                | Function                 |
+|---------------------------------------|--------------------------|
+|super + Return                         | st                       |
+|super + shift + Return                 | st with tmux             |
+|super + w                              | librewolf or brave       |
+|super + e                              | thunar                   |
+|super + shift                          | lf                       |
+|super + r                              | dmenu\_run               |
+|super + y                              | virt-manager             |
+|super + u                              | gimp                     |
+|super + shift + r                      | samde\_menu              |
+|super + Escape                         | power menu               |
+|super + shift + q                      | xkill                    |
+|super + control + q                    | reload dwm               |
+|super + Delete                         | slock                    |
+|super + o                              | dmenu\_open              |
+|super + p                              | reload sxhkd             |
+|super + shift + t                      | show current track       |
+|super + c                              | picom toggle             |
+|Audio Mute,LowerVolume,RaiseVolume     | adjust volume            |
+|shift + Audio LowerVolume,RaiseVolume  | adjust mpd volume        |
+|XF86Audio{Prev,Play,Next}              | mpd {prev,toggle,next}   |
+|shift + XF86Audio{Prev,Next}           | mpd seek                 |
+|Brightness Down,Up                     | adjust brightness        |
+
 
 ## Default Programs
 
