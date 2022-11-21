@@ -12,30 +12,30 @@ cd samde
 ## Keybinds
 
 ### Window manager keybinds
-| Keybind                 | Function                                             |
-|_________________________|______________________________________________________|
-|Mod + a,s,d,f,g          |  switch tag                                          |
-|Mod + shift + a,s,d,f,g  |  move to tag                                         |
-|Mod + ctrl + a,s,d,f,g   |  toggle tag view                                     |
-|Mod + q                  |  exit program                                        |
-|Mod + t                  |  scratchpad                                          |
-|Mod + b                  |  toggle bar                                          |
-|Mod + z                  |  toggle fullscreen                                   |
-|Mod + space              |  toggle floating window                              |
-|Mod + backspace          |  toggle sticky window                                |
-|Mod + tab                |  view previous tag                                   |
-|Mod + ;                  |  make selected window master                         |
-|Mod + h,l                |  adjust window split (mfact)                         |
-|Mod + j,k                |  switch window focus                                 |
-|Mod + n,m                |  switch monitors                                     |
-|Mod + shift + n,m        |  move window to monitor                              |
-|Mod + comma,period       |  adjust number of clients in master stack            |
-|Mod + 1,2,3              |  switch layouts (master-stack,floating,monacle)      |
-|Mod + 0                  |  view all tags                                       |
-|Mod + -,=                |  adjust gaps                                         |
-|Mod + shift + =          |  sets gaps to 0                                      |
-|Mod + shift + 0          |  make window visible on all tags                     |
-|Mod + F5                 |  reload Xresources colors                            |
+| Keybind                   | Function                                             |
+|---------------------------|------------------------------------------------------|
+| `Mod + a,s,d,f,g`         |  switch tag                                          |
+| `Mod + shift + a,s,d,f,g` |  move to tag                                         |
+| `Mod + ctrl + a,s,d,f,g`  |  toggle tag view                                     |
+| `Mod + q`                 |  exit program                                        |
+| `Mod + t`                 |  scratchpad                                          |
+| `Mod + b`                 |  toggle bar                                          |
+| `Mod + z`                 |  toggle fullscreen                                   |
+| `Mod + space`             |  toggle floating window                              |
+| `Mod + backspace`         |  toggle sticky window                                |
+| `Mod + tab`               |  view previous tag                                   |
+| `Mod + ;`                 |  make selected window master                         |
+| `Mod + h,l`               |  adjust window split (mfact)                         |
+| `Mod + j,k`               |  switch window focus                                 |
+| `Mod + n,m`               |  switch monitors                                     |
+| `Mod + shift + n,m`       |  move window to monitor                              |
+| `Mod + comma,period`      |  adjust number of clients in master stack            |
+| `Mod + 1,2,3`             |  switch layouts (master-stack,floating,monacle)      |
+| `Mod + 0`                 |  view all tags                                       |
+| `Mod + -,=`               |  adjust gaps                                         |
+| `Mod + shift + =`         |  sets gaps to 0                                      |
+| `Mod + shift + 0`         |  make window visible on all tags                     |
+| `Mod + F5`                |  reload Xresources colors                            |
 
 
 ## Default Programs
