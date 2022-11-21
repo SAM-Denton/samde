@@ -38,30 +38,30 @@ cd samde
 | `Mod + F5`                |  reload Xresources colors                            |
 
 ### Sxhkd keybinds
-|Keybind                                | Function                 |
-|---------------------------------------|--------------------------|
-|super + Return                         | st                       |
-|super + shift + Return                 | st with tmux             |
-|super + w                              | librewolf or brave       |
-|super + e                              | thunar                   |
-|super + shift                          | lf                       |
-|super + r                              | dmenu\_run               |
-|super + y                              | virt-manager             |
-|super + u                              | gimp                     |
-|super + shift + r                      | samde\_menu              |
-|super + Escape                         | power menu               |
-|super + shift + q                      | xkill                    |
-|super + control + q                    | reload dwm               |
-|super + Delete                         | slock                    |
-|super + o                              | dmenu\_open              |
-|super + p                              | reload sxhkd             |
-|super + shift + t                      | show current track       |
-|super + c                              | picom toggle             |
-|Audio Mute,LowerVolume,RaiseVolume     | adjust volume            |
-|shift + Audio LowerVolume,RaiseVolume  | adjust mpd volume        |
-|XF86Audio{Prev,Play,Next}              | mpd {prev,toggle,next}   |
-|shift + XF86Audio{Prev,Next}           | mpd seek                 |
-|Brightness Down,Up                     | adjust brightness        |
+|Keybind                                  | Function                 |
+|-----------------------------------------|--------------------------|
+|`super + enter`                          | st                       |
+|`super + shift + enter`                  | st with tmux             |
+|`super + w`                              | librewolf or brave       |
+|`super + e`                              | thunar                   |
+|`super + shift + e`                      | lf                       |
+|`super + r`                              | dmenu\_run               |
+|`super + shift + r`                      | samde\_menu              |
+|`super + y`                              | virt-manager             |
+|`super + u`                              | gimp                     |
+|`super + Escape`                         | power menu               |
+|`super + shift + q`                      | xkill                    |
+|`super + control + q`                    | reload dwm               |
+|`super + delete`                         | slock                    |
+|`super + o`                              | dmenu\_open              |
+|`super + p`                              | reload sxhkd             |
+|`super + shift + t`                      | show current track       |
+|`super + c`                              | picom toggle             |
+|`audio mute,lower,raise`                 | adjust volume            |
+|`shift + audio lower,raise`              | adjust mpd volume        |
+|`audio prev,play,next`                   | mpc prev,toggle,next     |
+|`shift + audio prev,next`                | mpc seek(rewind,foward)  |
+|`brightness down,up`                     | adjust brightness        |
 
 
 ## Default Programs
@@ -83,6 +83,6 @@ cd samde
 - GUI filemanager: thunar
 - Image viewer : nsxiv
 - Video player : mpv
-- Music player : ncmpcpp
+- Music player : ncmpcpp (with mpd+mpc)
 - Wallpaper program: xwallpaper
 - Screenlocker : slock
