@@ -9,3 +9,6 @@ git clone --depth 1 https://gitlab.com/SamDenton/samde.git
 cd samde
 ./samde.sh
 ```
+
+## Default Programs
+
