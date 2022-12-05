@@ -31,7 +31,8 @@ All my suckless programs have been patched to be able handle settings from Xreso
 **Feel free to skip this section. Use samde_menu to change settings**
 <details>
 <summary><b>[Click to reveal]</b></summary>
-I do most of my configuring in [/.config/x11](https://gitlab.com/SamDenton/dots/-/blob/master/.config/x11/) and I'm gonna explain how everything is set up.
+
+I do most of my configuring in [.config/x11](https://gitlab.com/SamDenton/dots/-/blob/master/.config/x11/) and I'm gonna explain how everything is set up.
 
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/x11.jpg">
 
