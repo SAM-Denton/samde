@@ -55,6 +55,8 @@ Each menu entry does the following:
 ### Tag icons
 [Nerdfont](https://www.nerdfonts.com/) icons are used for tags instead of numbers. Each tag icon corresponds to the type of programs I use on that tag.
 
+<img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/bars/kasugano.png">
+
 - Tag 1 : Web browser
 - Tag 2 : Terminal emulator
 - Tag 3 : File manager
@@ -67,7 +69,7 @@ My most used programs have rules in the config file to automatically spawn to a 
 ### Colorful tags
 Tags that are vacant will be greyed out and tags that are occupied will be colored.
 
-## Sticky windows
+### Sticky windows
 Sticky windows are windows that will be visible on every tag. Programs can be made sticky by default in "rules" in the config file and you can toggle it off and on with super+backspace.
 
 ## Keybinds
