@@ -7,8 +7,10 @@ This is a post Arch Linux installation script, it installs what I call "⸰⸫S�
 **This script is intended to be ran right after using archinstall with the "xorg" profile.**
 
 ## Screenshots
+
 <details>
 <summary><b>Click to reveal</b></summary>
+
 ### Rices
 - Luna
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/screenshot.jpg">
@@ -18,6 +20,7 @@ This is a post Arch Linux installation script, it installs what I call "⸰⸫S�
 **More rices and screenshots on the way**
 
 </details>
+
 ## Features
 
 ### Xresources
@@ -133,6 +136,7 @@ Yes, these keybindings are pretty odd. I've configured it this way cause I want 
 
 <details>
 <summary><b>click to reveal</b></summary>
+
 ### My builds of suckless software 
 - Window manager: [dwm](https://gitlab.com/SamDenton/dwm)
 - Terminal emulator : [st](https://gitlab.com/SamDenton/st)
