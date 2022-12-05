@@ -9,7 +9,7 @@ This is a post Arch Linux installation script, it installs what I call "⸰⸫S�
 ## Screenshots
 
 <details>
-<summary><b>Click to reveal</b></summary>
+<summary><b>[Click to reveal]</b></summary>
 
 ### Rices
 - Luna
@@ -30,7 +30,7 @@ All my suckless programs have been patched to be able handle settings from Xreso
 
 **Feel free to skip this section. Use samde_menu to change settings**
 <details>
-<summary><b>click to reveal</b></summary>
+<summary><b>[Click to reveal]</b></summary>
 I do most of my configuring in [/.config/x11](https://gitlab.com/SamDenton/dots/-/blob/master/.config/x11/) and I'm gonna explain how everything is set up.
 
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/x11.jpg">
@@ -73,7 +73,7 @@ Sticky windows are windows that will be visible on every tag. Programs can be ma
 ## Keybinds
 
 <details>
-<summary><b>Click to reveal</b></summary>
+<summary><b>[Click to reveal]</b></summary>
 
 Yes, these keybindings are pretty odd. I've configured it this way cause I want it to be ergonomic and I want my window manager specific keybindings and the rest of my keybindings separate. I also have a [ZSA Moonlander](https://www.zsa.io/moonlander) split keyboard which also makes the keybindings weird as well.
 
@@ -135,7 +135,7 @@ Yes, these keybindings are pretty odd. I've configured it this way cause I want 
 ## Default Programs
 
 <details>
-<summary><b>click to reveal</b></summary>
+<summary><b>[Click to reveal]</b></summary>
 
 ### My builds of suckless software 
 - Window manager: [dwm](https://gitlab.com/SamDenton/dwm)
