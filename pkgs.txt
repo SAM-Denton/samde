@@ -11,6 +11,7 @@ python-pywal
 unclutter
 picom
 sxhkd
+xdotool
 xorg-xkill
 xorg-xev
 
