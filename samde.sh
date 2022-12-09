@@ -7,7 +7,7 @@ folders=(.local .config .cache .cache/zsh .cache/mpd)
 for i in "${folders[@]}"; do [ -d $HOME/$i ] || mkdir $HOME/$i; done
 
 # Enabling Color, ParallelDownloads, ILoveCandy and adding the number of cpu threads in makepkg.conf
-sudo sed -i "/Color/s/^#//;Parallel/s/^#//;/#VerbosePkgLists/a ILoveCandy" /etc/pacman.conf
+sudo sed -i "/Color/s/^#//;/Parallel/s/^#//;/#VerbosePkgLists/a ILoveCandy" /etc/pacman.conf
 sudo sed -i "s/-j2/-j$(nproc)/;/^#MAKEFLAGS/s/^#//" /etc/makepkg.conf
 
 # Installing programs in pkg.txt
