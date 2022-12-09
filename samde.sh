@@ -34,7 +34,7 @@ ln -sf $HOME/.local/share/wallpapers/luna.png $HOME/.config/x11/wall
 for i in "${utils[@]}"
 do 
     git clone --depth 1 https://gitlab.com/samdenton/$i.git $HOME/.local/src/$i
-    sudo make clean install -C $HOME/.local/src/$i
+    sudo make install -C $HOME/.local/src/$i
 done
 
 # Installing the yay aur helper
