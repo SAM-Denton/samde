@@ -24,11 +24,10 @@ This is a post Arch Linux installation script, it installs what I call "⸰⸫S�
 ## Features
 
 ### Xresources
-All my suckless programs have been patched to be able handle settings from Xresources. I barely touch the config.h files for my suckless builds, I'm able to change settings on the fly without recompiling. I use a custom dmenu script that I've made called samde\_menu to change settings in a matter of seconds. 
+All my suckless programs have been patched to be able handle settings from Xresources. I barely touch the config files for my suckless builds, I'm able to change settings on the fly without recompiling. I use a custom dmenu script that I've made called samde\_menu to change settings in a matter of seconds. 
 
 ### How my X11/Xresources dotfiles work
 
-**Feel free to skip this section. Use samde_menu to change settings**
 <details>
 <summary><b>[Click to reveal]</b></summary>
 
@@ -47,10 +46,15 @@ The "colorschemes" folder contains colorschemes in the Xresources format. Use th
 
 Each menu entry does the following:
 
-- Color Scheme : Reads colorschemes from .config/x11/colorscheme and makes a list of schemes for you to select in dmenu, the selected theme will be loaded into my suckless builds. Look at the section about my dotfiles if you wanna get more colorschemes.
-- Rice Selector : Pretty self explanatory, see the screenshots for previews of the rices.
-- Pywal : Uses pywal to generate a colorscheme from .config/x11/wall and load it into my suckless builds . 
-- Monitor Profile : Does the same thing as "Color Scheme" but for setting the font size and pixel dimentions for my suckless builds. The "profiles" are in .config/x11/profiles
+- Color Scheme : Sets the colorscheme for all my suckless builds.
+- Rice Selector : Selects a "rice". The "rices" are just a combination of an Xresources colorscheme, a papirus-folder color and a wallpaper.
+- Wallpaper: Opens nsxiv with wallpapers for you to select.
+- Pywal : Uses pywal to generate a colorscheme from the current wallpaper and load it into my suckless builds. 
+- Folder Colors : Sets the folder color for the papirus icon theme.
+- Rounded Corners : Toggles rounded corners in picom.conf
+- Monitor Profile : Sets font size and pixel dimensions of my suckless builds for different monitor resolutions.
+- Bluetooth : opens [dmenu-bluetooth](https://github.com/Layerex/dmenu-bluetooth)
+- Network : opens [networkmanager\_dmenu](https://github.com/firecat53/networkmanager-dmenu)
 - Power Menu : Gives options to power off, reboot ,sleep ,logout or lock the screen.
 
 ### Tag icons
