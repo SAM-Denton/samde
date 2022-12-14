@@ -74,8 +74,11 @@ My most used programs have rules in the config file to automatically spawn to a 
 ### Colorful tags
 Tags that are vacant will be greyed out and tags that are occupied will be colored.
 
+<img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/tags.gif">
+
 ### Sticky windows
 Sticky windows are windows that will be visible on every tag. Programs can be made sticky by default in "rules" in the config file and you can toggle it off and on with super+backspace.
+
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/sticky.gif">
 
 ## Keybinds
