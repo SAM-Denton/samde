@@ -44,6 +44,8 @@ The "colorschemes" folder contains colorschemes in the Xresources format. Use th
 
 ### samde\_menu
 
+<img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/menu.jpg">
+
 Each menu entry does the following:
 
 - Color Scheme : Sets the colorscheme for all my suckless builds.
