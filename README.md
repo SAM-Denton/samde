@@ -3,48 +3,19 @@
 
 ## Introduction
 This is a post Arch Linux installation script, it installs what I call "⸰⸫SÅM⸎DE⸪⸰", my desktop environment that uses my custom builds of [suckless](https://suckless.org/) software: [dwm](https://gitlab.com/SamDenton/dwm), [dmenu](https://gitlab.com/SamDenton/dmenu), [st](https://gitlab.com/SamDenton/st) , [dnote](https://gitlab.com/SamDenton/dnoted) and [slstatus](https://gitlab.com/SamDenton/slstatus).
-
+ 
 **This script is intended to be ran right after using archinstall with the "xorg" profile.**
-
-## Screenshots
-
-<details>
-<summary><b>[Click to reveal]</b></summary>
-
-### Rices
-- Luna
-<img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/screenshot.jpg">
-- Rose
-- Deus ex
-
-**More rices and screenshots on the way**
-
-</details>
 
 ## Features
 
 ### Xresources
-All my suckless programs have been patched to be able handle settings from Xresources. I barely touch the config files for my suckless builds, I'm able to change settings on the fly without recompiling. I use a custom dmenu script that I've made called samde\_menu to change settings in a matter of seconds. 
-
-### How my X11/Xresources dotfiles work
-
-<details>
-<summary><b>[Click to reveal]</b></summary>
-
-I do most of my configuring in [.config/x11](https://gitlab.com/SamDenton/dots/-/blob/master/.config/x11/) and I'm gonna explain how everything is set up.
-
-<img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/x11.jpg">
-
-The "profiles" folder contains different xresources files that contain settings for appropriate font sizes and pixel dimensions for various monitor resolutions. A profile is selected by symlinking the chosen profile to the parent directory and calling the symlink "xresources".
-
-The "colorschemes" folder contains colorschemes in the Xresources format. Use the same process for "profiles" but call the symlink "xcolors" . You can get a bunch of Xresources colorschemes from : [this github repo](https://github.com/janoamaral/Xresources-themes) and [terminal.sexy](https://terminal.sexy)
-
-"wall" is a symlink for the selected wallpaper. I use it to set my wallpaper in my xinitrc and use it for pywal.
-</details>
+All my suckless program builds have been patched to be able handle settings from Xresources. This allows settings to be changed on the fly without recompiling. 
 
 ### samde\_menu
 
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/menu.jpg">
+
+This is a dmenu script used to change various system settings.
 
 Each menu entry does the following:
 
@@ -53,7 +24,7 @@ Each menu entry does the following:
 - Wallpaper: Opens nsxiv with wallpapers for you to select.
 - Pywal : Uses pywal to generate a colorscheme from the current wallpaper and load it into my suckless builds. 
 - Folder Colors : Sets the folder color for the papirus icon theme.
-- Rounded Corners : Toggles rounded corners in picom.conf
+- Rounded Corners : Toggles rounded corners in picom.conf.
 - Monitor Profile : Sets font size and pixel dimensions of my suckless builds for different monitor resolutions.
 - Bluetooth : opens [dmenu-bluetooth](https://github.com/Layerex/dmenu-bluetooth)
 - Network : opens [networkmanager\_dmenu](https://github.com/firecat53/networkmanager-dmenu)
@@ -71,7 +42,7 @@ Each menu entry does the following:
 - Tag 5 : Games and 2nd productivity tag
 
 ### Automatic tag switching
-My most used programs have rules in the config file to automatically spawn to a specified tag. Example: when I launch virt-manager it spawns to the 4th tag and dwm automatically switches to that tag.
+My most used programs have rules in the config file to automatically spawn to a specified tag. Example: when I open my file manager it spawns to the 3rd tag and dwm automatically switches to that tag.
 
 ### Colorful tags
 Tags that are vacant will be greyed out and tags that are occupied will be colored.
@@ -79,7 +50,7 @@ Tags that are vacant will be greyed out and tags that are occupied will be color
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/tags.gif">
 
 ### Sticky windows
-Sticky windows are windows that will be visible on every tag. Programs can be made sticky by default in "rules" in the config file and you can toggle it off and on with super+backspace.
+Sticky windows are windows that are visible on every tag. Programs can be made sticky by default in "rules" in the config file and you can toggle it off and on with super+backspace.
 
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/sticky.gif">
 
@@ -88,7 +59,7 @@ Sticky windows are windows that will be visible on every tag. Programs can be ma
 <details>
 <summary><b>[Click to reveal]</b></summary>
 
-Yes, these keybindings are pretty odd. I've configured it this way cause I want it to be ergonomic and I want my window manager specific keybindings and the rest of my keybindings separate. I also have a [ZSA Moonlander](https://www.zsa.io/moonlander) split keyboard which also makes the keybindings weird as well.
+Yes, these keybindings are pretty odd, the reason it's like that is for ergonomics and to seperate my window manager keybinds from my sxhkd keybinds. 
 
 ### Window manager keybinds
 
@@ -145,6 +116,22 @@ Yes, these keybindings are pretty odd. I've configured it this way cause I want 
 
 </details>
 
+## How my X11/Xresources dotfiles work
+
+<details>
+<summary><b>[Click to reveal]</b></summary>
+
+The config files are in : [.config/x11](https://gitlab.com/SamDenton/dots/-/blob/master/.config/x11/).
+
+<img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/x11.jpg">
+
+The "profiles" folder contains different xresources files that contain settings for appropriate font sizes and pixel dimensions for various monitor resolutions. A profile is selected by symlinking the chosen profile to the parent directory and calling the symlink "xresources".
+
+The "colorschemes" folder contains colorschemes in the Xresources format. Use the same process for "profiles" but call the symlink "xcolors" . You can get a bunch of Xresources colorschemes from : [this github repo](https://github.com/janoamaral/Xresources-themes) and [terminal.sexy](https://terminal.sexy)
+
+"wall" is a symlink for the selected wallpaper. I use it to set my wallpaper in my xinitrc and use it for pywal.
+</details>
+
 ## Default Programs
 
 <details>
@@ -179,8 +166,25 @@ git clone --depth 1 https://gitlab.com/SamDenton/samde.git
 cd samde
 ./samde.sh
 ```
+## Screenshots
+
+<details>
+<summary><b>[Click to reveal]</b></summary>
+
+### Rices
+- Luna
+
+<img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/screenshot.jpg">
+
+- Rose
+
+**More rices and screenshots on the way**
+
+</details>
 
 ## Credit
 This was mainly inspired by [LARBS](https://larbs.xyz/) and [chadwm](https://github.com/siduck/chadwm)
 
-I'd also like to thank suckless, and the FOSS community!
+This project was built mainly with suckless programs so I would like to give big thank you to suckless.
+
+Also last but not least I would like to thank the FOSS community. This would have not been possible to make with proprietary software.
