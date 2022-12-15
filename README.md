@@ -2,10 +2,8 @@
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/screenshot.jpg">
 
 ## Introduction
-This is a post Arch Linux installation script, it installs what I call "⸰⸫SÅM⸎DE⸪⸰", my desktop environment that uses my custom builds of [suckless](https://suckless.org/) software: [dwm](https://gitlab.com/SamDenton/dwm), [dmenu](https://gitlab.com/SamDenton/dmenu), [st](https://gitlab.com/SamDenton/st) , [dnote](https://gitlab.com/SamDenton/dnoted) and [slstatus](https://gitlab.com/SamDenton/slstatus).
+This is a Arch Linux post installation script, it installs what I call "⸰⸫SÅM⸎DE⸪⸰", my desktop environment that uses my custom builds of [suckless](https://suckless.org/) software: [dwm](https://gitlab.com/SamDenton/dwm), [dmenu](https://gitlab.com/SamDenton/dmenu), [st](https://gitlab.com/SamDenton/st) , [dnote](https://gitlab.com/SamDenton/dnoted) and [slstatus](https://gitlab.com/SamDenton/slstatus). The script also installs my dotfiles, my default programs, the "yay" aur helper and modifies pacman.conf and makepkg.conf.
  
-**This script is intended to be ran right after using archinstall with the "xorg" profile.**
-
 ## Features
 
 ### Xresources
@@ -161,6 +159,7 @@ The "colorschemes" folder contains colorschemes in the Xresources format. Use th
 </details>
 
 ## Installation
+I would recommend installing this in a virtual machine. Install arch linux with the archinstall script and select the "xorg" profile.
 ```
 git clone --depth 1 https://gitlab.com/SamDenton/samde.git
 cd samde

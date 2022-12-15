@@ -37,6 +37,11 @@ lxappearance-gtk3
 materia-gtk-theme
 qt5ct
 
+asciiquarium
+cowsay
+ponysay
+fortune-mod
+
 mpv
 mpd
 mpc
