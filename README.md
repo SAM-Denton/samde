@@ -1,5 +1,5 @@
 # SÅM's Åwesome Minimal Desktop Environment
-<img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/screenshot.jpg">
+<img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/luna.jpg">
 
 ## Introduction
 This is a Arch Linux post installation script, it installs what I call "⸰⸫SÅM⸎DE⸪⸰", my desktop environment that uses my custom builds of [suckless](https://suckless.org/) software: [dwm](https://gitlab.com/SamDenton/dwm), [dmenu](https://gitlab.com/SamDenton/dmenu), [st](https://gitlab.com/SamDenton/st) , [dnote](https://gitlab.com/SamDenton/dnoted) and [slstatus](https://gitlab.com/SamDenton/slstatus). The script also installs my dotfiles, my default programs, the "yay" aur helper and modifies pacman.conf and makepkg.conf.
@@ -173,7 +173,7 @@ cd samde
 ### Rices
 - Luna
 
-<img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/screenshot.jpg">
+<img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/luna.jpg">
 
 - Rose
 
