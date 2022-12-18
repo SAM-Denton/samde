@@ -3,11 +3,11 @@
 
 ## Introduction
 This is a Arch Linux post installation script, it installs what I call "⸰⸫SÅM⸎DE⸪⸰", my desktop environment that uses my custom builds of [suckless](https://suckless.org/) software: [dwm](https://gitlab.com/SamDenton/dwm), [dmenu](https://gitlab.com/SamDenton/dmenu), [st](https://gitlab.com/SamDenton/st) , [dnote](https://gitlab.com/SamDenton/dnoted) and [slstatus](https://gitlab.com/SamDenton/slstatus). The script also installs my dotfiles, my default programs, the "yay" aur helper and modifies pacman.conf and makepkg.conf.
- 
+
 ## Features
 
 ### Xresources
-All my suckless program builds have been patched to be able handle settings from Xresources. This allows settings to be changed on the fly without recompiling. 
+All of my suckless builds have been patched to be able handle settings from Xresources. This allows settings to be changed on the fly without recompiling. All my suckless builds are mostly configured in an [Xresources file](https://gitlab.com/SamDenton/dots/-/blob/master/.config/x11/profiles/1080p.Xresources). See the "How my X11/Xresources dotfiles work" section below for more info.
 
 ### samde\_menu
 
@@ -15,21 +15,21 @@ All my suckless program builds have been patched to be able handle settings from
 
 This is a dmenu script used to change various system settings.
 
-Each menu entry does the following:
+Each option does the following:
 
 - Color Scheme : Sets the colorscheme for all my suckless builds.
 - Rice Selector : Selects a "rice". The "rices" are just a combination of an Xresources colorscheme, a papirus-folder color and a wallpaper.
-- Wallpaper: Opens nsxiv with wallpapers for you to select.
 - Pywal : Uses pywal to generate a colorscheme from the current wallpaper and load it into my suckless builds. 
 - Folder Colors : Sets the folder color for the papirus icon theme.
 - Rounded Corners : Toggles rounded corners in picom.conf.
 - Monitor Profile : Sets font size and pixel dimensions of my suckless builds for different monitor resolutions.
 - Bluetooth : opens [dmenu-bluetooth](https://github.com/Layerex/dmenu-bluetooth)
 - Network : opens [networkmanager\_dmenu](https://github.com/firecat53/networkmanager-dmenu)
+- Reload Desktop : Reloads Xresources and all my suckless builds.
 - Power Menu : Gives options to power off, reboot ,sleep ,logout or lock the screen.
 
 ### Tag icons
-[Nerdfont](https://www.nerdfonts.com/) icons are used for tags instead of numbers. Each tag icon corresponds to the type of programs I use on that tag.
+[Nerdfont](https://www.nerdfonts.com/) icons are used for tags instead of numbers. My build of dwm is configured to have my most used programs open and switch to the appropriate tag.
 
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/bars/kasugano.png">
 
@@ -38,9 +38,6 @@ Each menu entry does the following:
 - Tag 3 : File manager
 - Tag 4 : Productivity
 - Tag 5 : Games and 2nd productivity tag
-
-### Automatic tag switching
-My most used programs have rules in the config file to automatically spawn to a specified tag. Example: when I open my file manager it spawns to the 3rd tag and dwm automatically switches to that tag.
 
 ### Colorful tags
 Tags that are vacant will be greyed out and tags that are occupied will be colored.
@@ -52,15 +49,22 @@ Sticky windows are windows that are visible on every tag. Programs can be made s
 
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/sticky.gif">
 
+### Scratchpad
+The scratchpad keybind is super+t, you can adjust the size by changing the amount of columns and rows of st. You need to merge Xresources and kill the scratchpad window for the change to take effect.
+
+### Top or centered dmenu
+My dmenu build supports both top and centered options. When on top it will match the padding of the dwm bar and have no border and when centered it will have a border.
+
+<img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/dmenu.jpg">
+
 ## Keybinds
 
 <details>
 <summary><b>[Click to reveal]</b></summary>
 
-Yes, these keybindings are pretty odd, the reason it's like that is for ergonomics and to seperate my window manager keybinds from my sxhkd keybinds. 
+Yes, these keybindings are pretty odd, the reason it's like that is for ergonomics and to seperate my window manager keybinds from my sxhkd keybinds. The top row of the keyboard is (mostly) used for launching programs and the home and bottom row is (mostly) used for window manager functions. 
 
 ### Window manager keybinds
-
 | Keybind                     | Function                                  |
 |-----------------------------|-------------------------------------------|
 | `super + a,s,d,f,g`         |  switch tag                               |
@@ -119,14 +123,17 @@ Yes, these keybindings are pretty odd, the reason it's like that is for ergonomi
 <details>
 <summary><b>[Click to reveal]</b></summary>
 
-The config files are in : [.config/x11](https://gitlab.com/SamDenton/dots/-/blob/master/.config/x11/).
+The config files are in [.config/x11](https://gitlab.com/SamDenton/dots/-/blob/master/.config/x11/).
 
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/x11.jpg">
 
+### Monitor profiles
 The "profiles" folder contains different xresources files that contain settings for appropriate font sizes and pixel dimensions for various monitor resolutions. A profile is selected by symlinking the chosen profile to the parent directory and calling the symlink "xresources".
 
+### Colorschemes
 The "colorschemes" folder contains colorschemes in the Xresources format. Use the same process for "profiles" but call the symlink "xcolors" . You can get a bunch of Xresources colorschemes from : [this github repo](https://github.com/janoamaral/Xresources-themes) and [terminal.sexy](https://terminal.sexy)
 
+### Wall
 "wall" is a symlink for the selected wallpaper. I use it to set my wallpaper in my xinitrc and use it for pywal.
 </details>
 
@@ -159,7 +166,7 @@ The "colorschemes" folder contains colorschemes in the Xresources format. Use th
 </details>
 
 ## Installation
-I would recommend installing this in a virtual machine. Install arch linux with the archinstall script and select the "xorg" profile.
+**Run this script with a regular user account.**
 ```
 git clone --depth 1 https://gitlab.com/SamDenton/samde.git
 cd samde
