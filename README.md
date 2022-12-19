@@ -10,22 +10,22 @@ This is an Arch Linux post installation script, it installs what I call "⸰⸫S
 All of my suckless builds have been patched to be able handle settings from Xresources. This allows settings to be changed on the fly without recompiling. All my suckless builds are mostly configured in an [Xresources file](https://gitlab.com/SamDenton/dots/-/blob/master/.config/x11/profiles/1080p.Xresources). See the "How my X11/Xresources dotfiles work" section below for more info.
 
 ### Terminal colorschemes for theming
-All my suckless builds use terminal colorschemes for theming. The colors are loaded from one Xresources file. Around 20 colorschemes are included in my dotfiles however if you want more you can get a bunch of Xresources colorschemes from : [this github repo](https://github.com/janoamaral/Xresources-themes) and [terminal.sexy](https://terminal.sexy)
+All my suckless builds use terminal colorschemes loaded from an Xresources file for theming. Around 20 colorschemes are included in my [dotfiles](https://gitlab.com/SamDenton/dots/-/tree/master/.config/x11/colorschemes) however if you want more you can get a bunch of Xresources colorschemes from : [this github repo](https://github.com/janoamaral/Xresources-themes) and [terminal.sexy](https://terminal.sexy). Put the colorschemes you want in .config/x11/colorschemes and use samde\_menu to apply them.
 
 ### samde\_menu
 
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/menu.jpg">
 
-This is a dmenu script used to change various system settings.
+This is a dmenu script used to change various system settings. Press super+shift+r to run it.
 
 Each option does the following:
 
-- Color Scheme : Sets the colorscheme for all my suckless builds.
+- Color Scheme : Gives a list of colorschemes to pick from.
 - Rice Selector : Selects a "rice". The "rices" are just a combination of an Xresources colorscheme, a papirus-folder color and a wallpaper.
 - Pywal : Uses pywal to generate a colorscheme from the current wallpaper and load it into my suckless builds. 
 - Folder Colors : Sets the folder color for the papirus icon theme.
 - Rounded Corners : Toggles rounded corners in picom.conf.
-- Monitor Profile : Sets font size and pixel dimensions of my suckless builds for different monitor resolutions.
+- Monitor Profile : Gives a list of monitor profiles to pick from.
 - Bluetooth : opens [dmenu-bluetooth](https://github.com/Layerex/dmenu-bluetooth)
 - Network : opens [networkmanager\_dmenu](https://github.com/firecat53/networkmanager-dmenu)
 - Reload Desktop : Reloads Xresources and all my suckless builds.
@@ -48,7 +48,7 @@ Tags that are vacant will be greyed out and tags that are occupied will be color
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/tags.gif">
 
 ### Sticky windows
-Sticky windows are windows that are visible on every tag. Programs can be made sticky by default in "rules" in the config file and you can toggle it off and on with super+backspace.
+Sticky windows are windows that are visible on every tag. Programs can be made sticky by default in "rules" in the [dwm config file](https://gitlab.com/SamDenton/dwm/-/blob/master/config.def.h) and you can toggle it off and on with super+backspace.
 
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/sticky.gif">
 
@@ -131,10 +131,10 @@ The config files are in [.config/x11](https://gitlab.com/SamDenton/dots/-/blob/m
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/x11.jpg">
 
 ### Monitor profiles
-The "profiles" folder contains different xresources files that contain settings for appropriate font sizes and pixel dimensions for various monitor resolutions. A profile is selected by symlinking the chosen profile to the x11 directory and calling the symlink "xresources".
+The "profiles" folder contains different xresources files that contain settings for appropriate font sizes and pixel dimensions for various monitor resolutions. A profile is selected by symlinking the chosen profile to the x11 directory and calling the symlink "xresources", samde\_menu automates this process.
 
 ### Colorschemes
-The "colorschemes" folder contains colorschemes in the Xresources format. Use the same process for "profiles" but call the symlink "xcolors" .
+The "colorschemes" folder contains colorschemes in the Xresources format. The same process used for "profiles" is used but the symlink is called "xcolors".
 
 ### Wall
 "wall" is a symlink for the selected wallpaper. I use it to set my wallpaper in my xinitrc and use it for pywal.
@@ -169,7 +169,7 @@ The "colorschemes" folder contains colorschemes in the Xresources format. Use th
 </details>
 
 ## Installation
-**Run this script with a regular user account.**
+**Run this script as a regular user.**
 ```
 git clone --depth 1 https://gitlab.com/SamDenton/samde.git
 cd samde
