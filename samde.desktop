@@ -1,6 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Name=⸰⸫SÅM⸎DE⸪⸰
-Comment=SÅM's Åwesome Minimal Desktop Environment
-Exec=$HOME/.config/x11/xinitrc
-Type=XSession

@@ -52,7 +52,4 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 nvim -c "PlugInstall|q|q"
 
-# Putting a .desktop entry in xsessions for display managers
-sudo cp samde.desktop /usr/share/xsessions/
-
 printf "\033c The script is done. logout or reboot to apply all the changes\n"

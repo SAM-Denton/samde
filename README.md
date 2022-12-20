@@ -68,60 +68,60 @@ My dmenu build supports both top and centered options. When on top it will match
 Yes, these keybindings are pretty odd, the reason it's like that is for ergonomics and to seperate my window manager keybinds from my sxhkd keybinds. The top row of the keyboard is (mostly) used for launching programs and the home and bottom row is (mostly) used for window manager functions. 
 
 ### Window manager keybinds
-| Keybind                      | Function                                      |
-|------------------------------|-----------------------------------------------|
-| `super + a,s,d,f,g`          |  switch tag                                   |
-| `super + shift + a,s,d,f,g`  |  move to tag                                  |
-| `super + ctrl + a,s,d,f,g`   |  toggle tag view                              |
-| `super + q`                  |  exit program                                 |
-| `super + t`                  |  scratchpad                                   |
-| `super + b`                  |  toggle bar                                   |
-| `super + z`                  |  toggle fullscreen                            |
-| `super + space`              |  toggle floating window                       |
-| `super + backspace`          |  toggle sticky window                         |
-| `super + tab`                |  view previous tag                            |
-| `super + j,k`                |  switch window focus                          |
-| `super + h,l`                |  switch monitors                              |
-| `super + shift + h,l`        |  move window to monitor                       |
-| `super + arrow keys`         |  move floating window                         |
-| `super + shift + arrow keys` |  move floating window to corner               |
-| `super + alt + arrow keys`   |  adjust width or height of floating window    |
-| `super + ctrl + up,down`     |  adjust width and height of floating window   |
-| `super + n,period`           |  adjust window split (mfact)                  |
-| `super + m,comma`            |  adjust number of master windows              |
-| `super + ;`                  |  switch master window                         |
-| `super + 1,2,3`              |  switch layouts (master,floating,monacle)     |
-| `super + -,=`                |  adjust gaps                                  |
-| `super + shift + =`          |  sets gaps to 0                               |
-| `super + 0`                  |  view all tags                                |
-| `super + shift + 0`          |  make window visible on all tags              |
-| `super + F5`                 |  reload Xresources colors                     |
+| Keybind                      | Function                                    |
+|------------------------------|---------------------------------------------|
+| `super + a,s,d,f,g`          |  switch tag                                 |
+| `super + shift + a,s,d,f,g`  |  move to tag                                |
+| `super + ctrl + a,s,d,f,g`   |  toggle tag view                            |
+| `super + q`                  |  exit program                               |
+| `super + t`                  |  scratchpad                                 |
+| `super + b`                  |  toggle bar                                 |
+| `super + z`                  |  toggle fullscreen                          |
+| `super + space`              |  toggle floating window                     |
+| `super + backspace`          |  toggle sticky window                       |
+| `super + tab`                |  view previous tag                          |
+| `super + j,k`                |  switch window focus                        |
+| `super + h,l`                |  switch monitors                            |
+| `super + shift + h,l`        |  move window to monitor                     |
+| `super + arrow keys`         |  move floating window                       |
+| `super + shift + arrow keys` |  move floating window to corner             |
+| `super + alt + arrow keys`   |  adjust width or height of floating window  |
+| `super + ctrl + up,down`     |  adjust width and height of floating window |
+| `super + n,period`           |  adjust window split (mfact)                |
+| `super + m,comma`            |  adjust number of master windows            |
+| `super + ;`                  |  switch master window                       |
+| `super + 1,2,3`              |  switch layouts (master,floating,monacle)   |
+| `super + -,=`                |  adjust gaps                                |
+| `super + shift + =`          |  sets gaps to 0                             |
+| `super + 0`                  |  view all tags                              |
+| `super + shift + 0`          |  make window visible on all tags            |
+| `super + F5`                 |  reload Xresources colors                   |
 
 ### Sxhkd keybinds
-| Keybind                       | Function                 |
-|-------------------------------|--------------------------|
-| `super + enter`               | st                       |
-| `super + shift + enter`       | st with tmux             |
-| `super + w`                   | librewolf or brave       |
-| `super + e`                   | thunar                   |
-| `super + shift + e`           | lf                       |
-| `super + r`                   | dmenu\_run               |
-| `super + shift + r`           | samde\_menu              |
-| `super + y`                   | virt-manager             |
-| `super + u`                   | gimp                     |
-| `super + Escape`              | power menu               |
-| `super + shift + q`           | xkill                    |
-| `super + control + q`         | reload dwm               |
-| `super + delete`              | slock                    |
-| `super + o`                   | dmenu\_open              |
-| `super + p`                   | reload sxhkd             |
-| `super + shift + t`           | show current track       |
-| `super + c`                   | picom toggle             |
-| `audio {mute,lower,raise}`    | adjust volume            |
-| `shift + audio {lower,raise}` | adjust mpd volume        |
-| `audio {prev,play,next}`      | mpc prev,toggle,next     |
-| `shift + audio {prev,next}`   | mpc seek(rewind,foward)  |
-| `brightness {down,up}`        | adjust brightness        |
+| Keybind                       | Function                |
+|-------------------------------|-------------------------|
+| `super + enter`               | st with tmux            |
+| `super + shift + enter`       | st                      |
+| `super + w`                   | librewolf or brave      |
+| `super + e`                   | thunar                  |
+| `super + shift + e`           | lf                      |
+| `super + r`                   | dmenu\_run              |
+| `super + shift + r`           | samde\_menu             |
+| `super + y`                   | virt-manager            |
+| `super + u`                   | gimp                    |
+| `super + Escape`              | power menu              |
+| `super + shift + q`           | xkill                   |
+| `super + control + q`         | reload dwm              |
+| `super + delete`              | slock                   |
+| `super + o`                   | dmenu\_open             |
+| `super + p`                   | reload sxhkd            |
+| `super + shift + t`           | show current track      |
+| `super + c`                   | picom toggle            |
+| `audio {mute,lower,raise}`    | adjust volume           |
+| `shift + audio {lower,raise}` | adjust mpd volume       |
+| `audio {prev,play,next}`      | mpc prev,toggle,next    |
+| `shift + audio {prev,next}`   | mpc seek(rewind,foward) |
+| `brightness {down,up}`        | adjust brightness       |
 
 </details>
 
