@@ -60,7 +60,7 @@ while true ; do
         read -p "Are you installing this is a virtual machine ?(y/n): " answer
     case $answer in
         
-        y) sed -i '/picom/s/^/#/g' $HOME/x11/xinitrc
+        y) sed -i '/picom/s/^/#/g' $HOME/.config/x11/xinitrc
            echo "Disabled picom. Picom doesn't seem to work in virtual machines"
            break;;
 

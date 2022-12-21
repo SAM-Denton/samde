@@ -7,10 +7,10 @@ This is an Arch Linux post installation script, it installs what I call "⸰⸫S
 ## Features
 
 ### Xresources
-All of my suckless builds have been patched to be able handle settings from Xresources. This allows settings to be changed on the fly without recompiling. All my suckless builds are mostly configured in an [Xresources file](https://gitlab.com/SamDenton/dots/-/blob/master/.config/x11/profiles/1080p.Xresources). See the "How my X11/Xresources dotfiles work" section if you want more info.
+All of my suckless builds have been patched to be able handle settings from [Xresources](https://gitlab.com/SamDenton/dots/-/blob/master/.config/x11/profiles/1080p.Xresources). This allows settings to be changed on the fly without recompiling. See the "How my X11/Xresources dotfiles work" section if you want more info.
 
 ### Effortless theming
-All my suckless builds use terminal colorschemes loaded from Xresources. Around 20 colorschemes are included in my [dotfiles](https://gitlab.com/SamDenton/dots/-/tree/master/.config/x11/colorschemes) however if you want more you can get a bunch of Xresources colorschemes from : [this github repo](https://github.com/janoamaral/Xresources-themes) and [terminal.sexy](https://terminal.sexy). Put the colorschemes you want in .config/x11/colorschemes and use samde\_menu to apply them.
+All my suckless builds use terminal colorschemes loaded from Xresources. Around 20 colorschemes are included in my [dotfiles](https://gitlab.com/SamDenton/dots/-/tree/master/.config/x11/colorschemes) however if you want more you can get a bunch of colorschemes from : [this github repo](https://github.com/janoamaral/Xresources-themes) and [terminal.sexy](https://terminal.sexy). 
 
 ### samde\_menu
 
@@ -21,7 +21,7 @@ This is a dmenu script used to change various system settings. Press super+shift
 Each option does the following:
 
 - Color Scheme : Gives a list of colorschemes to pick from.
-- Rice Selector : Selects a "rice". The "rices" are just a combination of an Xresources colorscheme, a papirus-folder color and a wallpaper.
+- Rice Selector : Selects a "rice". The "rices" are just a combination of a colorscheme, a papirus-folder color and a wallpaper.
 - Pywal : Uses pywal to generate a colorscheme from the current wallpaper and load it into my suckless builds. 
 - Folder Colors : Sets the folder color for the papirus icon theme.
 - Rounded Corners : Toggles rounded corners in picom.conf.
