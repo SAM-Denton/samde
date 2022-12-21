@@ -52,4 +52,22 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 nvim -c "PlugInstall|q|q"
 
-printf "\033c The script is done. logout or reboot to apply all the changes\n"
+# Asking if this is being installed in a virtual machine and disabling picom the answer is yes.
+# Picom doesn't seem to work in VMs anymore, even with vsync disabled.
+printf "\033c"
+echo
+while true ; do
+        read -p "Are you installing this is a virtual machine ?(y/n): " answer
+    case $answer in
+        
+        y) sed -i '/picom/s/^/#/g' $HOME/x11/xinitrc
+           echo "Disabled picom. Picom doesn't seem to work in virtual machines"
+           break;;
+
+        n) break;;
+
+        *) echo "Enter y or n";;
+esac
+done
+
+printf "The script is done. logout or reboot to apply all changes.\n"

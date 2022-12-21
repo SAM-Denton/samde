@@ -7,10 +7,10 @@ This is an Arch Linux post installation script, it installs what I call "⸰⸫S
 ## Features
 
 ### Xresources
-All of my suckless builds have been patched to be able handle settings from Xresources. This allows settings to be changed on the fly without recompiling. All my suckless builds are mostly configured in an [Xresources file](https://gitlab.com/SamDenton/dots/-/blob/master/.config/x11/profiles/1080p.Xresources). See the "How my X11/Xresources dotfiles work" section below for more info.
+All of my suckless builds have been patched to be able handle settings from Xresources. This allows settings to be changed on the fly without recompiling. All my suckless builds are mostly configured in an [Xresources file](https://gitlab.com/SamDenton/dots/-/blob/master/.config/x11/profiles/1080p.Xresources). See the "How my X11/Xresources dotfiles work" section if you want more info.
 
-### Terminal colorschemes for theming
-All my suckless builds use terminal colorschemes loaded from an Xresources file for theming. Around 20 colorschemes are included in my [dotfiles](https://gitlab.com/SamDenton/dots/-/tree/master/.config/x11/colorschemes) however if you want more you can get a bunch of Xresources colorschemes from : [this github repo](https://github.com/janoamaral/Xresources-themes) and [terminal.sexy](https://terminal.sexy). Put the colorschemes you want in .config/x11/colorschemes and use samde\_menu to apply them.
+### Effortless theming
+All my suckless builds use terminal colorschemes loaded from Xresources. Around 20 colorschemes are included in my [dotfiles](https://gitlab.com/SamDenton/dots/-/tree/master/.config/x11/colorschemes) however if you want more you can get a bunch of Xresources colorschemes from : [this github repo](https://github.com/janoamaral/Xresources-themes) and [terminal.sexy](https://terminal.sexy). Put the colorschemes you want in .config/x11/colorschemes and use samde\_menu to apply them.
 
 ### samde\_menu
 
@@ -61,41 +61,39 @@ My dmenu build supports both top and centered options. When on top it will match
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/dmenu.jpg">
 
 ## Keybinds
-
 <details>
 <summary><b>[Click to reveal]</b></summary>
 
-Yes, these keybindings are pretty odd, the reason it's like that is for ergonomics and to seperate my window manager keybinds from my sxhkd keybinds. The top row of the keyboard is (mostly) used for launching programs and the home and bottom row is (mostly) used for window manager functions. 
+Yes, these keybindings are pretty odd, the reason it's like that is for ergonomics and to seperate my window manager keybinds from my sxhkd keybinds. The top row of the keyboard is (mostly) used for launching programs and the home and bottom row is (mostly) used for window manager functions. Like most people I've changed the mod key for dwm to be the super key (aka windows key).
 
 ### Window manager keybinds
-| Keybind                      | Function                                    |
-|------------------------------|---------------------------------------------|
-| `super + a,s,d,f,g`          |  switch tag                                 |
-| `super + shift + a,s,d,f,g`  |  move to tag                                |
-| `super + ctrl + a,s,d,f,g`   |  toggle tag view                            |
-| `super + q`                  |  exit program                               |
-| `super + t`                  |  scratchpad                                 |
-| `super + b`                  |  toggle bar                                 |
-| `super + z`                  |  toggle fullscreen                          |
-| `super + space`              |  toggle floating window                     |
-| `super + backspace`          |  toggle sticky window                       |
-| `super + tab`                |  view previous tag                          |
-| `super + j,k`                |  switch window focus                        |
-| `super + h,l`                |  switch monitors                            |
-| `super + shift + h,l`        |  move window to monitor                     |
-| `super + arrow keys`         |  move floating window                       |
-| `super + shift + arrow keys` |  move floating window to corner             |
-| `super + alt + arrow keys`   |  adjust width or height of floating window  |
-| `super + ctrl + up,down`     |  adjust width and height of floating window |
-| `super + n,period`           |  adjust window split (mfact)                |
-| `super + m,comma`            |  adjust number of master windows            |
-| `super + ;`                  |  switch master window                       |
-| `super + 1,2,3`              |  switch layouts (master,floating,monacle)   |
-| `super + -,=`                |  adjust gaps                                |
-| `super + shift + =`          |  sets gaps to 0                             |
-| `super + 0`                  |  view all tags                              |
-| `super + shift + 0`          |  make window visible on all tags            |
-| `super + F5`                 |  reload Xresources colors                   |
+| Keybind                     | Function                                 |
+|-----------------------------|------------------------------------------|
+| `super + a,s,d,f,g`         | switch tag                               |
+| `super + shift + a,s,d,f,g` | move to tag                              |
+| `super + ctrl + a,s,d,f,g`  | toggle tag view                          |
+| `super + q`                 | exit program                             |
+| `super + t`                 | scratchpad                               |
+| `super + b`                 | toggle bar                               |
+| `super + z`                 | toggle fullscreen                        |
+| `super + space`             | toggle floating window                   |
+| `super + backspace`         | toggle sticky window                     |
+| `super + tab`               | view previous tag                        |
+| `super + j,k`               | switch window focus                      |
+| `super + h,l`               | switch monitors                          |
+| `super + shift + h,l`       | move window to monitor                   |
+| `super + shift + j,k`       | resize floating window                   |
+| `super + ctrl + h,j,k,l`    | move floating window                     |
+| `super + alt + h,j,k,l`     | move floating window to corner           |
+| `super + n,period`          | adjust window split (mfact)              |
+| `super + m,comma`           | adjust number of master windows          |
+| `super + ;`                 | switch master window                     |
+| `super + 1,2,3`             | switch layouts (master,floating,monacle) |
+| `super + -,=`               | adjust gaps                              |
+| `super + shift + =`         | sets gaps to 0                           |
+| `super + 0`                 | view all tags                            |
+| `super + shift + 0`         | make window visible on all tags          |
+| `super + F5`                | reload Xresources colors                 |
 
 ### Sxhkd keybinds
 | Keybind                       | Function                |
@@ -114,8 +112,8 @@ Yes, these keybindings are pretty odd, the reason it's like that is for ergonomi
 | `super + control + q`         | reload dwm              |
 | `super + delete`              | slock                   |
 | `super + o`                   | dmenu\_open             |
-| `super + p`                   | reload sxhkd            |
-| `super + shift + t`           | show current track      |
+| `super + alt + r`             | reload sxhkd            |
+| `super + shift + t`           | show current track(mpd) |
 | `super + c`                   | picom toggle            |
 | `audio {mute,lower,raise}`    | adjust volume           |
 | `shift + audio {lower,raise}` | adjust mpd volume       |
@@ -164,6 +162,7 @@ The "colorschemes" folder contains colorschemes in the Xresources format. The sa
 - Compositor: picom
 - TUI file manager: lf
 - GUI file manager: thunar
+- Web browser: librewolf
 - Image viewer : nsxiv
 - Video player : mpv
 - Music player : ncmpcpp (with mpd+mpc)
@@ -173,6 +172,7 @@ The "colorschemes" folder contains colorschemes in the Xresources format. The sa
 </details>
 
 ## Installation
+This script is intended to be ran in a fresh install of arch with no display manager(gui login screen). I use this script after using archinstall with the "xorg" profile selected.
 **Run this script as a regular user.**
 ```
 git clone --depth 1 https://gitlab.com/SamDenton/samde.git
@@ -196,8 +196,10 @@ cd samde
 </details>
 
 ## Credit
-This was mainly inspired by [LARBS](https://larbs.xyz/) and [chadwm](https://github.com/siduck/chadwm)
+This was mainly inspired by [LARBS](https://larbs.xyz/) and [chadwm](https://github.com/siduck/chadwm).
 
 I would like to give big thank you to suckless and all the people who've made patches for the suckless programs.
 
-Also last but not least I would like to thank the FOSS community. This would have not been possible to make with proprietary software.
+Thank you to the authors of [dmenu-bluetooth](https://github.com/Layerex/dmenu-bluetooth) and [networkmanager\_dmenu](https://github.com/firecat53/networkmanager-dmenu) and [lfub](https://github.com/LukeSmithxyz/voidrice/blob/master/.local/bin/lfub).
+
+Also last but not least I would like to thank the FOSS community. This project would have not been possible to make with proprietary software.
