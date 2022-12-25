@@ -7,10 +7,10 @@ This is an Arch Linux post installation script, it installs what I call "⸰⸫S
 ## Features
 
 ### Xresources
-All of my suckless builds have been patched to be able handle settings from [Xresources](https://gitlab.com/SamDenton/dots/-/blob/master/.config/x11/profiles/1080p.Xresources). This allows settings to be changed on the fly without recompiling. See the "How my X11/Xresources dotfiles work" section if you want more info.
+All of my suckless builds have been patched to be able handle settings from [Xresources](https://gitlab.com/SamDenton/dots/-/blob/master/.config/x11/profiles/1080p.Xresources). This allows settings to be changed on the fly without recompiling. Look at the "How my X11 dotfiles work" section if you want more info.
 
 ### Effortless theming
-All my suckless builds use terminal colorschemes loaded from Xresources. Around 20 colorschemes are included in my [dotfiles](https://gitlab.com/SamDenton/dots/-/tree/master/.config/x11/colorschemes) however if you want more you can get a bunch of colorschemes from : [this github repo](https://github.com/janoamaral/Xresources-themes) and [terminal.sexy](https://terminal.sexy). 
+All my suckless builds use terminal colorschemes loaded from Xresources. You can use my samde\_menu script to change colorschemes in a matter of seconds.
 
 ### samde\_menu
 
@@ -20,7 +20,7 @@ This is a dmenu script used to change various system settings. Press super+shift
 
 Each option does the following:
 
-- Color Scheme : Gives a list of colorschemes to pick from.
+- Color Scheme : Gives a list of colorschemes to pick from. Look at the "How my X11 dotfiles work" section if you want to add more.
 - Rice Selector : Selects a "rice". The "rices" are just a combination of a colorscheme, a papirus-folder color and a wallpaper.
 - Pywal : Uses pywal to generate a colorscheme from the current wallpaper and load it into my suckless builds. 
 - Folder Colors : Sets the folder color for the papirus icon theme.
@@ -64,7 +64,7 @@ My dmenu build supports both top and centered options. When on top it will match
 <details>
 <summary><b>[Click to reveal]</b></summary>
 
-Yes, these keybindings are pretty odd, the reason it's like that is for ergonomics and to seperate my window manager keybinds from my sxhkd keybinds. The top row of the keyboard is (mostly) used for launching programs and the home and bottom row is (mostly) used for window manager functions. Like most people I've changed the mod key for dwm to be the super key (aka windows key).
+Yes, these keybindings are pretty odd, the reason it's like that is for ergonomics and to seperate my window manager keybinds from my sxhkd keybinds. The top row of the keyboard is (mostly) used for launching programs and the home and bottom row is (mostly) used for window manager functions. Like most people I've changed the mod key for dwm to be the super key (aka windows key). 
 
 ### Window manager keybinds
 | Keybind                     | Function                                 |
@@ -105,8 +105,7 @@ Yes, these keybindings are pretty odd, the reason it's like that is for ergonomi
 | `super + shift + e`           | lf                      |
 | `super + r`                   | dmenu\_run              |
 | `super + shift + r`           | samde\_menu             |
-| `super + y`                   | virt-manager            |
-| `super + u`                   | gimp                    |
+| `super + y,u,i,o,p`           | plaunch script          |
 | `super + Escape`              | power menu              |
 | `super + shift + q`           | xkill                   |
 | `super + control + q`         | reload dwm              |
@@ -123,7 +122,7 @@ Yes, these keybindings are pretty odd, the reason it's like that is for ergonomi
 
 </details>
 
-## How my X11/Xresources dotfiles work
+## How my X11 dotfiles work
 
 <details>
 <summary><b>[Click to reveal]</b></summary>
@@ -136,7 +135,7 @@ The config files are in [.config/x11](https://gitlab.com/SamDenton/dots/-/blob/m
 The "profiles" folder contains different xresources files that contain settings for appropriate font sizes and pixel dimensions for various monitor resolutions. A profile is selected by symlinking the chosen profile to the x11 directory and calling the symlink "xresources", samde\_menu automates this process.
 
 ### Colorschemes
-The "colorschemes" folder contains colorschemes in the Xresources format. The same process used for "profiles" is used but the symlink is called "xcolors".
+The "colorschemes" folder contains colorschemes in the Xresources format. The same process used for "profiles" is used but the symlink is called "xcolors". Around 30 colorschemes are included, however if you want more you can get a bunch of colorschemes from : [this github repo](https://github.com/janoamaral/Xresources-themes) and [terminal.sexy](https://terminal.sexy). 
 
 ### Wall
 "wall" is a symlink for the selected wallpaper. I use it to set my wallpaper in my xinitrc and use it for pywal.
@@ -172,28 +171,13 @@ The "colorschemes" folder contains colorschemes in the Xresources format. The sa
 </details>
 
 ## Installation
-This script is intended to be ran in a fresh install of arch with no display manager(gui login screen). I use this script after using archinstall with the "xorg" profile selected.
+This script is intended to be ran in a fresh install of Arch linux with no display manager(gui login screen). I use this script after using archinstall with the "xorg" profile selected.
 **Run this script as a regular user.**
 ```
 git clone --depth 1 https://gitlab.com/SamDenton/samde.git
 cd samde
 ./samde.sh
 ```
-## Screenshots
-
-<details>
-<summary><b>[Click to reveal]</b></summary>
-
-### Rices
-- Luna
-
-<img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/luna.jpg">
-
-- Rose
-
-**More rices and screenshots on the way**
-
-</details>
 
 ## Credit
 This was mainly inspired by [LARBS](https://larbs.xyz/) and [chadwm](https://github.com/siduck/chadwm).
