@@ -22,14 +22,12 @@ Each option does the following:
 
 - Color Scheme : Gives a list of colorschemes to pick from. Look at the "How my X11 dotfiles work" section if you want to add more.
 - Rice Selector : Selects a "rice". The "rices" are just a combination of a colorscheme, a papirus-folder color and a wallpaper.
+- Font : Changes the font for my suckless builds.
 - Pywal : Uses pywal to generate a colorscheme from the current wallpaper and load it into my suckless builds. 
 - Folder Colors : Sets the folder color for the papirus icon theme.
 - Rounded Corners : Toggles rounded corners in picom.conf.
 - Monitor Profile : Gives a list of monitor profiles to pick from.
-- Bluetooth : opens [dmenu-bluetooth](https://github.com/Layerex/dmenu-bluetooth)
-- Network : opens [networkmanager\_dmenu](https://github.com/firecat53/networkmanager-dmenu)
 - Reload Desktop : Reloads Xresources and all my suckless builds.
-- Power Menu : Gives options to power off, reboot ,sleep ,logout or lock the screen.
 
 ### Tag icons
 [Nerdfont](https://www.nerdfonts.com/) icons are used for tags instead of numbers. My build of dwm is configured to have my most used programs automatically open and switch to the appropriate tag.
@@ -106,7 +104,7 @@ Yes, these keybindings are pretty odd, the reason it's like that is for ergonomi
 | `super + r`                   | dmenu\_run              |
 | `super + shift + r`           | samde\_menu             |
 | `super + y,u,i,o,p`           | plaunch script          |
-| `super + Escape`              | power menu              |
+| `super + Escape`              | power\_menu             |
 | `super + shift + q`           | xkill                   |
 | `super + control + q`         | reload dwm              |
 | `super + delete`              | slock                   |
@@ -132,7 +130,7 @@ The config files are in [.config/x11](https://gitlab.com/SamDenton/dots/-/blob/m
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/x11.jpg">
 
 ### Monitor profiles
-The "profiles" folder contains different xresources files that contain settings for appropriate font sizes and pixel dimensions for various monitor resolutions. A profile is selected by symlinking the chosen profile to the x11 directory and calling the symlink "xresources", samde\_menu automates this process.
+The "profiles" folder contains xresources files that contain settings for different monitor resolutions . A profile is selected making a symlink called "xresources" in the x11 directory, samde\_menu automates this process.
 
 ### Colorschemes
 The "colorschemes" folder contains colorschemes in the Xresources format. The same process used for "profiles" is used but the symlink is called "xcolors". Around 30 colorschemes are included, however if you want more you can get a bunch of colorschemes from : [this github repo](https://github.com/janoamaral/Xresources-themes) and [terminal.sexy](https://terminal.sexy). 
@@ -172,6 +170,7 @@ The "colorschemes" folder contains colorschemes in the Xresources format. The sa
 
 ## Installation
 This script is intended to be ran in a fresh install of Arch linux with no display manager(gui login screen). I use this script after using archinstall with the "xorg" profile selected.
+
 **Run this script as a regular user.**
 ```
 git clone --depth 1 https://gitlab.com/SamDenton/samde.git
@@ -184,6 +183,6 @@ This was mainly inspired by [LARBS](https://larbs.xyz/) and [chadwm](https://git
 
 I would like to give big thank you to suckless and all the people who've made patches for the suckless programs.
 
-Thank you to the authors of [dmenu-bluetooth](https://github.com/Layerex/dmenu-bluetooth) and [networkmanager\_dmenu](https://github.com/firecat53/networkmanager-dmenu) and [lfub](https://github.com/LukeSmithxyz/voidrice/blob/master/.local/bin/lfub).
+Thank you to the creators of [dmenu-bluetooth](https://github.com/Layerex/dmenu-bluetooth) and [lfub](https://github.com/LukeSmithxyz/voidrice/blob/master/.local/bin/lfub).
 
 Also last but not least I would like to thank the FOSS community. This project would have not been possible to make with proprietary software.
