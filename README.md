@@ -41,7 +41,7 @@ Each option does the following:
 - Tag 5 : Games and 2nd productivity tag
 
 ### Colorful tags
-Tags that are vacant will be greyed out and tags that are occupied will be colored.
+Vacant tags are greyed out and occupied tags are colored.
 
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/tags.gif">
 
@@ -54,7 +54,7 @@ Sticky windows are windows that are visible on every tag. Programs can be made s
 The scratchpad keybind is super+t, you can adjust the size by changing the amount of columns and rows of st. You need to merge Xresources and kill the scratchpad window for the change to take effect.
 
 ### Top or centered dmenu
-My dmenu build supports both top and centered options. When on top it will match the padding of the dwm bar and have no border and when centered it will have a border.
+My dmenu build supports both top and centered options. When on top it matches the padding of the dwm bar and has no border and when centered it has a border.
 
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/dmenu.jpg">
 
