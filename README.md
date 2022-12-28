@@ -65,33 +65,33 @@ My dmenu build supports both top and centered options. When on top it will match
 Yes, these keybindings are pretty odd, the reason it's like that is for ergonomics and to seperate my window manager keybinds from my sxhkd keybinds. The top row of the keyboard is (mostly) used for launching programs and the home and bottom row is (mostly) used for window manager functions. Like most people I've changed the mod key for dwm to be the super key (aka windows key). 
 
 ### Window manager keybinds
-| Keybind                     | Function                                 |
-|-----------------------------|------------------------------------------|
-| `super + a,s,d,f,g`         | switch tag                               |
-| `super + shift + a,s,d,f,g` | move to tag                              |
-| `super + ctrl + a,s,d,f,g`  | toggle tag view                          |
-| `super + q`                 | exit program                             |
-| `super + t`                 | scratchpad                               |
-| `super + b`                 | toggle bar                               |
-| `super + z`                 | toggle fullscreen                        |
-| `super + space`             | toggle floating window                   |
-| `super + backspace`         | toggle sticky window                     |
-| `super + tab`               | view previous tag                        |
-| `super + j,k`               | switch window focus                      |
-| `super + h,l`               | switch monitors                          |
-| `super + shift + h,l`       | move window to monitor                   |
-| `super + shift + j,k`       | resize floating window                   |
-| `super + ctrl + h,j,k,l`    | move floating window                     |
-| `super + alt + h,j,k,l`     | move floating window to corner           |
-| `super + n,period`          | adjust window split (mfact)              |
-| `super + m,comma`           | adjust number of master windows          |
-| `super + ;`                 | switch master window                     |
-| `super + 1,2,3`             | switch layouts (master,floating,monacle) |
-| `super + -,=`               | adjust gaps                              |
-| `super + shift + =`         | sets gaps to 0                           |
-| `super + 0`                 | view all tags                            |
-| `super + shift + 0`         | make window visible on all tags          |
-| `super + F5`                | reload Xresources colors                 |
+| Keybind                     | Function                              |
+|-----------------------------|---------------------------------------|
+| `super + a,s,d,f,g`         | switch tag                            |
+| `super + shift + a,s,d,f,g` | move to tag                           |
+| `super + ctrl + a,s,d,f,g`  | toggle tag view                       |
+| `super + q`                 | exit program                          |
+| `super + t`                 | scratchpad                            |
+| `super + b`                 | toggle bar                            |
+| `super + z`                 | toggle fullscreen                     |
+| `super + space`             | toggle floating window                |
+| `super + backspace`         | toggle sticky window                  |
+| `super + tab`               | view previous tag                     |
+| `super + j,k`               | switch window focus                   |
+| `super + h,l`               | switch monitors                       |
+| `super + shift + h,l`       | move window to monitor                |
+| `super + shift + j,k`       | resize floating window                |
+| `super + ctrl + h,j,k,l`    | move floating window                  |
+| `super + alt + h,j,k,l`     | move floating window to corner        |
+| `super + n,period`          | adjust window split (mfact)           |
+| `super + m,comma`           | adjust number of master windows       |
+| `super + ;`                 | switch master window                  |
+| `super + 1,2,3`             | switch layouts (master,float,monacle) |
+| `super + -,=`               | adjust gaps                           |
+| `super + shift + =`         | sets gaps to 0                        |
+| `super + 0`                 | view all tags                         |
+| `super + shift + 0`         | make window visible on all tags       |
+| `super + F5`                | reload Xresources colors              |
 
 ### Sxhkd keybinds
 | Keybind                       | Function                |
@@ -103,7 +103,7 @@ Yes, these keybindings are pretty odd, the reason it's like that is for ergonomi
 | `super + shift + e`           | lf                      |
 | `super + r`                   | dmenu\_run              |
 | `super + shift + r`           | samde\_menu             |
-| `super + y,u,i,o,p`           | plaunch script          |
+| `super + y,u,i,o,p`           | program launch script   |
 | `super + Escape`              | power\_menu             |
 | `super + shift + q`           | xkill                   |
 | `super + control + q`         | reload dwm              |
