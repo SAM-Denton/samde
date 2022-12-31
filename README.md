@@ -32,20 +32,15 @@ Each option does the following:
 - Reload Desktop : Merges Xresources and reloads all my suckless builds.
 
 ### Tag icons
-[Nerdfont](https://www.nerdfonts.com/) icons are used for tags instead of numbers. My build of dwm is configured to have my most used programs automatically open and switch to the appropriate tag.
+[Nerdfont](https://www.nerdfonts.com/) icons are used for tags instead of numbers. My build of dwm is configured to have my most used programs automatically open and switch to the appropriate tag. Also vacant tags are greyed out and occupied tags are colored.
 
-<img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/bars/kasugano.png">
+<img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/tags.gif">
 
 - Tag 1 : Web browser
 - Tag 2 : Terminal emulator
 - Tag 3 : File manager
 - Tag 4 : Productivity
 - Tag 5 : Games and 2nd productivity tag
-
-### Colorful tags
-Vacant tags are greyed out and occupied tags are colored.
-
-<img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/tags.gif">
 
 ### Sticky windows
 Sticky windows are windows that are visible on every tag. Programs can be made sticky by default in "rules" in the [dwm config file](https://gitlab.com/SamDenton/dwm/-/blob/master/config.def.h) and you can toggle it off and on with super+backspace.
