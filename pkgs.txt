@@ -36,6 +36,7 @@ tumbler
 lxappearance-gtk3
 materia-gtk-theme
 qt5ct
+qt6ct
 
 asciiquarium
 cowsay

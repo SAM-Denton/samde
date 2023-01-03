@@ -24,7 +24,7 @@ Each option does the following:
 
 - Color Scheme : Gives a list of colorschemes to pick from. Look at the "How my X11 dotfiles work" section if you want to add more.
 - Rice Selector : Selects a "rice". The "rices" are mostly a combination of a colorscheme and wallpaper.
-- Font : Gives a list of fonts to pick from for the dwm bar.
+- Font : Gives a list of fonts to pick from for the dwm bar, dmenu and dnote.
 - Pywal : Uses pywal to generate a colorscheme from the current wallpaper and load it into my suckless builds. 
 - Folder Colors : Sets the folder color for the papirus icon theme.
 - Rounded Corners : Toggles rounded corners in picom.conf.
@@ -58,6 +58,7 @@ My dmenu build supports both top and centered options. When on top it matches th
 ## Keybinds
 <details>
 <summary><b>[Click to reveal]</b></summary>
+
 
 Yes, these keybindings are pretty odd, the reason it's like that is for ergonomics and to seperate my window manager keybinds from my sxhkd keybinds. The top row of the keyboard is (mostly) used for launching programs and the home and bottom row is (mostly) used for window manager functions. Like most people I've changed the mod key for dwm to be the super key (aka windows key). 
 
@@ -98,6 +99,7 @@ Yes, these keybindings are pretty odd, the reason it's like that is for ergonomi
 | `super + w`                   | librewolf or brave      |
 | `super + e`                   | thunar                  |
 | `super + shift + e`           | lf                      |
+| `super + ctrl + e`            | dmenu\_open             |
 | `super + r`                   | dmenu\_run              |
 | `super + shift + r`           | samde\_menu             |
 | `super + y,u,i,o,p`           | program launch script   |
@@ -105,7 +107,6 @@ Yes, these keybindings are pretty odd, the reason it's like that is for ergonomi
 | `super + shift + q`           | xkill                   |
 | `super + control + q`         | reload dwm              |
 | `super + delete`              | slock                   |
-| `super + o`                   | dmenu\_open             |
 | `super + alt + r`             | reload sxhkd            |
 | `super + shift + t`           | show current track(mpd) |
 | `super + c`                   | picom toggle            |
@@ -121,6 +122,7 @@ Yes, these keybindings are pretty odd, the reason it's like that is for ergonomi
 
 <details>
 <summary><b>[Click to reveal]</b></summary>
+
 
 The config files are in [.config/x11](https://gitlab.com/SamDenton/dots/-/blob/master/.config/x11/).
 
