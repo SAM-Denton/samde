@@ -47,10 +47,14 @@ wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR="$HOME/.local/shar
 wget -qO- https://git.io/papirus-folders-install | env PREFIX=$HOME/.local sh
 $HOME/.local/bin/papirus-folders -C indigo
 
-# Installs Rosepine GTK theme
+# Installs GTK themes
 git clone --depth 1 https://github.com/Fausto-Korpsvart/Rose-Pine-GTK-Theme.git
 mv Rose-Pine-GTK-Theme/themes/*BL $HOME/.local/share/themes
 rm -rf Rose-Pine-GTK-Theme
+
+git clone --depth 1 https://github.com/Fausto-Korpsvart/Everforest-GTK-Theme.git
+mv Everforest-GTK-Theme/themes/Everforest-Dark-BL $HOME/.local/share/themes
+rm -rf Everforest-GTK-Theme
 
 # Installs vim-plug
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
