@@ -1,10 +1,10 @@
-#!/bin/sh
+#!/bin/bash
 
 utils=(dwm dmenu st slstatus dnote)
-folders=(.local .config .cache .cache/zsh .cache/mpd .local/share/themes)
+folders=(.local .config .cache/zsh .cache/mpd .local/share/themes)
 
 # Checks for folders and creates them if absent
-for i in "${folders[@]}"; do [ -d $HOME/$i ] || mkdir $HOME/$i; done
+for i in "${folders[@]}"; do [ -d $HOME/$i ] || mkdir -p $HOME/$i; done
 
 # Enables Color, ParallelDownloads, ILoveCandy and adds the number of cpu threads in makepkg.conf
 sudo sed -i "/Color/s/^#//;/Parallel/s/^#//;/#VerbosePkgLists/a ILoveCandy" /etc/pacman.conf

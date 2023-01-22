@@ -94,8 +94,8 @@ Yes, these keybindings are pretty odd, the reason it's like that is for ergonomi
 ### Sxhkd keybinds
 | Keybind                       | Function                |
 |-------------------------------|-------------------------|
-| `super + enter`               | st with tmux            |
-| `super + shift + enter`       | st                      |
+| `super + enter`               | st                      |
+| `super + shift + enter`       | st with tmux            |
 | `super + w`                   | librewolf or brave      |
 | `super + e`                   | thunar                  |
 | `super + shift + e`           | lf                      |
