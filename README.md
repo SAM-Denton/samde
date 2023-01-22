@@ -63,7 +63,7 @@ My dmenu build supports both top and centered options. When on top it matches th
 Yes, these keybindings are pretty odd, the reason it's like that is for ergonomics and to seperate my window manager keybinds from my sxhkd keybinds. The top row of the keyboard is (mostly) used for launching programs and the home and bottom row is (mostly) used for window manager functions. Like most people I've changed the mod key for dwm to be the super key (aka windows key). 
 
 ### Window manager keybinds
-| Keybind                     | Function                              |
+| Keybind                     | Action                                |
 |-----------------------------|---------------------------------------|
 | `super + a,s,d,f,g`         | switch tag                            |
 | `super + shift + a,s,d,f,g` | move to tag                           |
@@ -92,7 +92,7 @@ Yes, these keybindings are pretty odd, the reason it's like that is for ergonomi
 | `super + F5`                | reload Xresources colors              |
 
 ### Sxhkd keybinds
-| Keybind                       | Function                |
+| Keybind                       | Action                  |
 |-------------------------------|-------------------------|
 | `super + enter`               | st                      |
 | `super + shift + enter`       | st with tmux            |
@@ -110,6 +110,7 @@ Yes, these keybindings are pretty odd, the reason it's like that is for ergonomi
 | `super + alt + r`             | reload sxhkd            |
 | `super + shift + t`           | show current track(mpd) |
 | `super + c`                   | picom toggle            |
+| `super + control + b"`        | dmenu-bluetooth         |
 | `audio {mute,lower,raise}`    | adjust volume           |
 | `shift + audio {lower,raise}` | adjust mpd volume       |
 | `audio {prev,play,next}`      | mpc prev,toggle,next    |
