@@ -66,7 +66,7 @@ nvim -c "PlugInstall|q|q"
 printf "\033c"
 echo
 while true ; do
-        read -p "Are you installing this is a virtual machine ?(y/n): " answer
+        read -p "Are you installing this in a virtual machine ?(y/n): " answer
     case $answer in
         
         y) sed -i '/picom/s/^/#/g' $HOME/.config/x11/xinitrc
