@@ -99,7 +99,6 @@ Yes, these keybindings are pretty odd, the reason it's like that is for ergonomi
 | `super + w`                   | librewolf or brave      |
 | `super + e`                   | thunar                  |
 | `super + shift + e`           | lf                      |
-| `super + ctrl + e`            | dmenu\_open             |
 | `super + r`                   | dmenu\_run              |
 | `super + shift + r`           | samde\_menu             |
 | `super + y,u,i,o,p`           | program launch script   |
@@ -110,7 +109,9 @@ Yes, these keybindings are pretty odd, the reason it's like that is for ergonomi
 | `super + alt + r`             | reload sxhkd            |
 | `super + shift + t`           | show current track(mpd) |
 | `super + c`                   | picom toggle            |
-| `super + control + b"`        | dmenu-bluetooth         |
+| `super + control + b`         | dmenu-bluetooth         |
+| `super + control + r`         | rice-selector           |
+| `super + control + c`         | colorscheme-selector    |
 | `audio {mute,lower,raise}`    | adjust volume           |
 | `shift + audio {lower,raise}` | adjust mpd volume       |
 | `audio {prev,play,next}`      | mpc prev,toggle,next    |
