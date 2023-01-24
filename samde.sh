@@ -59,7 +59,7 @@ rm -rf Everforest-GTK-Theme
 # Installs old version of Nerd Fonts, the newest version is broken
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.0/NerdFontsSymbolsOnly.zip
 unzip NerdFontsSymbolsOnly.zip -d NerdFonts
-mv NerdFontsSymbolsOnly/Symbols-2048-em Nerd Font Complete.ttf $HOME/.local/share/fonts
+mv NerdFonts/Symbols-2048-em\ Nerd\ Font\ Complete.ttf $HOME/.local/share/fonts
 rm -rf NerdFonts*
  
 
