@@ -1,7 +1,7 @@
 #!/bin/bash
 
 utils=(dwm dmenu st slstatus dnote)
-folders=(.local .config .cache/zsh .cache/mpd .local/share/themes)
+folders=(.local .config .cache/zsh .cache/mpd .local/share/themes .local/share/fonts)
 
 # Checks for folders and creates them if absent
 for i in "${folders[@]}"; do [ -d $HOME/$i ] || mkdir -p $HOME/$i; done
@@ -55,6 +55,13 @@ rm -rf Rose-Pine-GTK-Theme
 git clone --depth 1 https://github.com/Fausto-Korpsvart/Everforest-GTK-Theme.git
 mv Everforest-GTK-Theme/themes/Everforest-Dark-BL $HOME/.local/share/themes
 rm -rf Everforest-GTK-Theme
+
+# Installs old version of Nerd Fonts, the newest version is broken
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.0/NerdFontsSymbolsOnly.zip
+unzip NerdFontsSymbolsOnly.zip -d NerdFonts
+mv NerdFontsSymbolsOnly/Symbols-2048-em Nerd Font Complete.ttf $HOME/.local/share/fonts
+rm -rf NerdFonts*
+ 
 
 # Installs vim-plug
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
