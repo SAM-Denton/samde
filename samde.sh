@@ -61,6 +61,7 @@ wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.0/NerdFontsS
 unzip NerdFontsSymbolsOnly.zip -d NerdFonts
 mv NerdFonts/Symbols-2048-em\ Nerd\ Font\ Complete.ttf $HOME/.local/share/fonts
 rm -rf NerdFonts*
+fc-cache update
  
 
 # Installs vim-plug
