@@ -60,7 +60,7 @@ My dmenu build supports both top and centered options. When on top it matches th
 <summary><b>[Click to reveal]</b></summary>
 
 
-Yes, these keybindings are pretty odd, the reason it's like that is for ergonomics and to seperate my window manager keybinds from my sxhkd keybinds. The top row of the keyboard is (mostly) used for launching programs and the home and bottom row is (mostly) used for window manager functions. Like most people I've changed the mod key for dwm to be the super key (aka windows key). 
+Yes, these keybindings are pretty odd, the reason it's like that is for ergonomics and to have my window manager keys seperate from my other hotkeys. The top row of the keyboard is (mostly) used for launching programs and the home and bottom row is (mostly) used for window manager functions. Like most people I've changed the mod key for dwm to be the super key (aka windows key). 
 
 ### Window manager keybinds
 | Keybind                     | Action                                |
@@ -91,7 +91,7 @@ Yes, these keybindings are pretty odd, the reason it's like that is for ergonomi
 | `super + shift + 0`         | make window visible on all tags       |
 | `super + F5`                | reload Xresources colors              |
 
-### Sxhkd keybinds
+### Other keybinds
 | Keybind                       | Action                  |
 |-------------------------------|-------------------------|
 | `super + enter`               | st                      |
@@ -106,8 +106,6 @@ Yes, these keybindings are pretty odd, the reason it's like that is for ergonomi
 | `super + shift + q`           | xkill                   |
 | `super + control + q`         | reload dwm              |
 | `super + delete`              | slock                   |
-| `super + alt + r`             | reload sxhkd            |
-| `super + shift + t`           | show current track(mpd) |
 | `super + c`                   | picom toggle            |
 | `super + control + b`         | dmenu-bluetooth         |
 | `super + control + r`         | rice-selector           |
@@ -115,6 +113,7 @@ Yes, these keybindings are pretty odd, the reason it's like that is for ergonomi
 | `audio {mute,lower,raise}`    | adjust volume           |
 | `shift + audio {lower,raise}` | adjust mpd volume       |
 | `audio {prev,play,next}`      | mpc prev,toggle,next    |
+| `super + shift + audio play`  | show current track(mpd) |
 | `shift + audio {prev,next}`   | mpc seek(rewind,foward) |
 | `brightness {down,up}`        | adjust brightness       |
 
@@ -153,7 +152,6 @@ The "colorschemes" folder contains colorschemes in the Xresources format. The sa
 - Notification utility : [dnote](https://gitlab.com/SamDenton/dnote)
 
 ### Other programs
-- Hotkey daemon : sxhkd
 - Shell: zsh
 - Prompt: starship
 - Editor: neovim
