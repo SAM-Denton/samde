@@ -159,7 +159,7 @@ The "colorschemes" folder contains colorschemes in the Xresources format. The sa
 - TUI file manager: lf
 - GUI file manager: thunar
 - Web browser: librewolf
-- Image viewer : imv
+- Image viewer : nsxiv
 - Video player : mpv
 - Music player : ncmpcpp (with mpd+mpc)
 - Wallpaper program: xwallpaper
