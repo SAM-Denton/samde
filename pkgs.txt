@@ -9,7 +9,6 @@ xwallpaper
 python-pywal
 unclutter
 picom
-sxhkd
 xdotool
 xorg-xkill
 xorg-xev
@@ -42,7 +41,6 @@ cowsay
 ponysay
 fortune-mod
 
-imv
 mpv
 mpd
 mpc
