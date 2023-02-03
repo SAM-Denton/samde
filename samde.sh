@@ -1,7 +1,7 @@
 #!/bin/bash
 
 utils=(dwm dmenu st slstatus dnote)
-folders=(.local .config .cache/zsh .cache/mpd .local/share/themes .local/share/fonts)
+folders=(.local .config .cache/zsh .cache/mpd .local/share/themes)
 
 # Checks for folders and creates them if absent
 for i in "${folders[@]}"; do [ -d $HOME/$i ] || mkdir -p $HOME/$i; done
@@ -25,7 +25,7 @@ rsync --recursive --verbose --exclude '.git' tmpdots/ $HOME/
 rm -rf tmpdots
 /usr/bin/git --git-dir=$HOME/.config/.dots --work-tree=$HOME config --local status.showUntrackedFiles no
 ln -sf $HOME/.config/x11/profiles/1080p.Xresources $HOME/.config/x11/xresources
-ln -sf $HOME/.config/x11/colorschemes/Kasugano.Xresources $HOME/.config/x11/xcolors
+ln -sf $HOME/.config/x11/colorschemes/Luna.Xresources $HOME/.config/x11/xcolors
 
 git clone --depth 1 https://gitlab.com/samdenton/wallpapers.git $HOME/.local/share/wallpapers
 ln -sf $HOME/.local/share/wallpapers/luna.png $HOME/.config/x11/wall

@@ -10,11 +10,11 @@ This is an Arch Linux post installation script, it installs what I call "⸰⸫S
 All of my suckless builds have been patched to be able handle settings from [Xresources](https://gitlab.com/SamDenton/dots/-/blob/master/.config/x11/profiles/1080p.Xresources). This allows settings to be changed on the fly without recompiling. Look at the "How my X11 dotfiles work" section if you want more info.
 
 ### Effortless theming
-All my suckless builds use terminal colorschemes loaded from Xresources. You can use my samde\_menu script to change colorschemes in a matter of seconds. The colors are loaded from a single Xresources file rather than having to set the colors in multiple config files.
+All my suckless builds use terminal colorschemes loaded from Xresources. You can use my dmenu-samde script to change colorschemes in a matter of seconds. The colors are loaded from a single Xresources file rather than having to set the colors in multiple config files.
 
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/colorscheme.gif">
 
-### samde\_menu
+### dmenu-samde
 
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/menu.png">
 
@@ -178,7 +178,7 @@ cd samde
 ```
 
 ## Credit
-This was mainly inspired by [LARBS](https://larbs.xyz/) and [chadwm](https://github.com/siduck/chadwm).
+This was mainly inspired by [LARBS](https://larbs.xyz/), [DTOS](https://gitlab.com/dtos/dtos) and [chadwm](https://github.com/siduck/chadwm).
 
 I would like to give big thank you to suckless and all the people who've made patches for the suckless programs.
 
