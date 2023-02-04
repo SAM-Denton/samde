@@ -28,7 +28,7 @@ ln -sf $HOME/.config/x11/profiles/1080p.Xresources $HOME/.config/x11/xresources
 ln -sf $HOME/.config/x11/colorschemes/Luna.Xresources $HOME/.config/x11/xcolors
 
 git clone --depth 1 https://gitlab.com/samdenton/wallpapers.git $HOME/.local/share/wallpapers
-ln -sf $HOME/.local/share/wallpapers/luna.png $HOME/.config/x11/wall
+ln -sf $HOME/.local/share/wallpapers/Luna.png $HOME/.config/x11/wall
 
 # Clones my suckless utilities and compiles
 for i in "${utils[@]}"

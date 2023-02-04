@@ -100,7 +100,7 @@ Yes, these keybindings are pretty odd, the reason it's like that is for ergonomi
 | `super + e`                   | thunar                  |
 | `super + shift + e`           | lf                      |
 | `super + r`                   | dmenu\_run              |
-| `super + shift + r`           | samde\_menu             |
+| `super + shift + r`           | dmenu-samde             |
 | `super + y,u,i,o,p`           | program launch script   |
 | `super + Escape`              | power\_menu             |
 | `super + shift + q`           | xkill                   |
