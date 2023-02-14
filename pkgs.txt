@@ -22,6 +22,7 @@ starship
 neovim
 htop
 nvtop
+iftop
 lf
 tmux
 fzf
@@ -51,6 +52,8 @@ ncmpcpp
 ueberzug
 zathura
 
+shotgun
+hacksaw
 xclip
 bat
 pamixer
