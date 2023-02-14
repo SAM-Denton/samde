@@ -51,6 +51,7 @@ pulsemixer
 ncmpcpp
 ueberzug
 zathura
+zathura-pdf-poppler
 
 shotgun
 hacksaw
