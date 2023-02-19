@@ -17,6 +17,7 @@ xorg-xev
 zsh
 zsh-syntax-highlighting
 zsh-autosuggestions
+dash
 starship
 
 neovim
