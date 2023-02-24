@@ -67,3 +67,4 @@ lsw
 lshw
 lsscsi
 ripgrep
+ufw

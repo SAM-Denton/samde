@@ -61,6 +61,11 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 nvim -c "PlugInstall|q|q"
 
+# Enable firewall
+sudo systemctl enable ufw
+sudo ufw default deny
+sudo ufw enable
+
 # Asks if this is being installed in a virtual machine and disabling picom the answer is yes.
 # Picom doesn't seem to work in VMs anymore, even with vsync disabled.
 printf "\033c"
