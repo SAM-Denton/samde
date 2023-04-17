@@ -48,7 +48,7 @@ wget -qO- https://git.io/papirus-folders-install | env PREFIX=$HOME/.local sh
 $HOME/.local/bin/papirus-folders -C indigo
 
 # Installs GTK themes
-git clone --depth 1 https://gitlab.com/samdenton/themes.git $HOME/.local/share/
+git clone --depth 1 https://gitlab.com/samdenton/themes.git $HOME/.local/share/themes
 
 # Installs vim-plug
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
