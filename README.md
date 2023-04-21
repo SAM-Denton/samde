@@ -116,6 +116,7 @@ Yes, these keybindings are pretty odd, I have my tag keys bound to "asdfg" for e
 | `shift + audio {prev,next}`   | mpc seek(rewind,foward) |
 | `brightness {down,up}`        | adjust brightness       |
 
+</details>
 
 ## Default Programs
 
