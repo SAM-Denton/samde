@@ -2,15 +2,15 @@
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/luna.jpg">
 
 ## Introduction
-This is an Arch Linux post installation script, it installs what I call "⸰⸫SÅM⸎DE⸪⸰", my desktop environment that uses my custom builds of [suckless](https://suckless.org/) software: [dwm](https://gitlab.com/SamDenton/dwm), [dmenu](https://gitlab.com/SamDenton/dmenu), [st](https://gitlab.com/SamDenton/st) , [dnote](https://gitlab.com/SamDenton/dnote) and [slstatus](https://gitlab.com/SamDenton/slstatus). The script also installs my dotfiles, my default programs, the "yay" AUR helper and modifies pacman.conf and makepkg.conf.
+This is an Arch Linux post installation script that installs my desktop environment that is comprised of custom builds of [suckless](https://suckless.org/) software: [dwm](https://gitlab.com/SamDenton/dwm), [dmenu](https://gitlab.com/SamDenton/dmenu), [st](https://gitlab.com/SamDenton/st) , [dnote](https://gitlab.com/SamDenton/dnote) and [slstatus](https://gitlab.com/SamDenton/slstatus). The script also installs my dotfiles and the programs I use.
 
 ## Features
 
 ### Xresources
-All of my suckless builds have been patched to be able handle settings from [Xresources](https://gitlab.com/SamDenton/dots/-/blob/master/.config/x11/profiles/1080p.Xresources). This allows settings to be changed on the fly without recompiling. Look at the "How my X11 dotfiles work" section if you want more info.
+All of my suckless builds support [Xresources](https://gitlab.com/SamDenton/dots/-/blob/master/.config/x11/profiles/1080p.Xresources). This allows settings to be changed on the fly without recompiling.
 
 ### Effortless theming
-All my suckless builds use terminal colorschemes loaded from Xresources. You can use my dmenu-samde script to change colorschemes in a matter of seconds. The colors are loaded from a single Xresources file rather than having to set the colors in multiple config files.
+You can use my dmenu-samde script to change colorscheme of my suckless builds in a matter of seconds. The colorschemes are loaded from a single Xresources file rather than having to set the colors in multiple config files. A good amount of colorschemes are included in the [x11/colorschemes](https://gitlab.com/SamDenton/dots/-/tree/master/.config/x11/colorschemes) folder from my dotfiles, however if you want more you can get a bunch of colorschemes from : [this github repo](https://github.com/janoamaral/Xresources-themes) and [terminal.sexy](https://terminal.sexy). 
 
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/colorscheme.gif">
 
@@ -20,16 +20,15 @@ All my suckless builds use terminal colorschemes loaded from Xresources. You can
 
 This is a dmenu script used to change various system settings. Press super+shift+r to run it.
 
-Each option does the following:
+I'll explain some of the options that I think need an explanation:
 
-- Color Scheme : Gives a list of colorschemes to pick from. Look at the "How my X11 dotfiles work" section if you want to add more.
-- Rice Selector : Selects a "rice". The "rices" are mostly a combination of a colorscheme and wallpaper.
-- Font : Gives a list of fonts to pick from for the dwm bar, dmenu and dnote.
+- Suckless Toggles : toggle options in my suckless builds , such as gaps, bar padding, etc.
+- Font : Gives a list of fonts to pick from. "System Font" changes the dwm bar, dmenu and dnote.
 - Pywal : Uses pywal to generate a colorscheme from the current wallpaper and load it into my suckless builds. 
 - Folder Colors : Sets the folder color for the papirus icon theme.
 - Rounded Corners : Toggles rounded corners in picom.conf.
-- Monitor Profile : Gives a list of monitor profiles to pick from.
-- Reload Desktop : Merges Xresources and reloads all my suckless builds.
+- Monitor Profile : Changes the size of ui elements for various screen sizes and resolutions.
+- Reload Desktop : Merges Xresources and reloads all my suckless programs.
 
 ### Tag icons
 [Nerdfont](https://www.nerdfonts.com/) icons are used for tags instead of numbers. My build of dwm is configured to have my most used programs automatically open and switch to the appropriate tag. Also vacant tags are greyed out and occupied tags are colored.
@@ -48,7 +47,7 @@ Sticky windows are windows that are visible on every tag. Programs can be made s
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/sticky.gif">
 
 ### Scratchpad
-The scratchpad keybind is super+t, you can adjust the size by changing the amount of columns and rows of st. You need to merge Xresources and kill the scratchpad window for the change to take effect.
+The scratchpad keybind is super+t, you can adjust the default size by changing the amount of columns and rows of st. You need to merge Xresources and kill the scratchpad window for the change to take effect.
 
 ### Top or centered dmenu
 My dmenu build supports both top and centered options. When on top it matches the padding of the dwm bar and has no border and when centered it has a border.
@@ -60,7 +59,7 @@ My dmenu build supports both top and centered options. When on top it matches th
 <summary><b>[Click to reveal]</b></summary>
 
 
-Yes, these keybindings are pretty odd, the reason it's like that is for ergonomics and to have my window manager keys seperate from my other hotkeys. The top row of the keyboard is (mostly) used for launching programs and the home and bottom row is (mostly) used for window manager functions. Like most people I've changed the mod key for dwm to be the super key (aka windows key). 
+Yes, these keybindings are pretty odd, I have my tag keys bound to "asdfg" for ergonomics and because I switch tags often. The top row of the keyboard is (mostly) used for launching programs and the home and bottom row is (mostly) used for window manager functions. Like most people I've changed the mod key for dwm to be the super key (aka windows key). 
 
 ### Window manager keybinds
 | Keybind                     | Action                                |
@@ -108,7 +107,7 @@ Yes, these keybindings are pretty odd, the reason it's like that is for ergonomi
 | `super + delete`              | slock                   |
 | `super + c`                   | picom toggle            |
 | `super + control + b`         | dmenu-bluetooth         |
-| `super + control + r`         | rice-selector           |
+| `super + control + t`         | theme-selector          |
 | `super + control + c`         | colorscheme-selector    |
 | `audio {mute,lower,raise}`    | adjust volume           |
 | `shift + audio {lower,raise}` | adjust mpd volume       |
@@ -117,27 +116,6 @@ Yes, these keybindings are pretty odd, the reason it's like that is for ergonomi
 | `shift + audio {prev,next}`   | mpc seek(rewind,foward) |
 | `brightness {down,up}`        | adjust brightness       |
 
-</details>
-
-## How my X11 dotfiles work
-
-<details>
-<summary><b>[Click to reveal]</b></summary>
-
-
-The config files are in [.config/x11](https://gitlab.com/SamDenton/dots/-/blob/master/.config/x11/).
-
-<img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/x11.jpg">
-
-### Monitor profiles
-The "profiles" folder contains xresources files that contain settings for different monitor resolutions . A profile is selected making a symlink called "xresources" in the x11 directory, samde\_menu automates this process.
-
-### Colorschemes
-The "colorschemes" folder contains colorschemes in the Xresources format. The same process used for "profiles" is used but the symlink is called "xcolors". Around 30 colorschemes are included, however if you want more you can get a bunch of colorschemes from : [this github repo](https://github.com/janoamaral/Xresources-themes) and [terminal.sexy](https://terminal.sexy). 
-
-### Wall
-"wall" is a symlink for the selected wallpaper. I use it to set my wallpaper in my xinitrc and use it for pywal.
-</details>
 
 ## Default Programs
 
@@ -159,11 +137,11 @@ The "colorschemes" folder contains colorschemes in the Xresources format. The sa
 - TUI file manager: lf
 - GUI file manager: thunar
 - Web browser: librewolf
-- Image viewer : nsxiv
-- Video player : mpv
-- Music player : ncmpcpp (with mpd+mpc)
+- Image viewer: nsxiv
+- Video player: mpv
+- Music player: ncmpcpp (with mpd+mpc)
 - Wallpaper program: xwallpaper
-- Screen locker : slock
+- Screen locker: slock
 
 </details>
 
@@ -184,4 +162,4 @@ I would like to give big thank you to suckless and all the people who've made pa
 
 Thank you to the creators of [dmenu-bluetooth](https://github.com/Layerex/dmenu-bluetooth) and [lfub](https://github.com/LukeSmithxyz/voidrice/blob/master/.local/bin/lfub).
 
-Also last but not least I would like to thank the FOSS community. This project would have not been possible to make with proprietary software.
+Also last but not least I would like to thank the FOSS community. This project is essentially a collection of software and ideas from the FOSS community and this project would not even exist without it.
