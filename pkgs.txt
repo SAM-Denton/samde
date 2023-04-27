@@ -9,7 +9,7 @@ libxft
 xwallpaper
 python-pywal
 unclutter
-picom
+libconfig
 xdotool
 xorg-xkill
 xorg-xev
