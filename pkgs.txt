@@ -12,6 +12,7 @@ unclutter
 libconfig
 xdotool
 xorg-xkill
+xorg-xrandr
 xorg-xev
 
 zsh

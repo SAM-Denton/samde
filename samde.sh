@@ -61,7 +61,7 @@ sudo ufw default deny
 sudo ufw enable
 
 # Install FT-Labs picom
-sudo pacman -S meson cmake libev uthash
+sudo pacman --noconfirm --needed -S meson cmake libev uthash
 git clone --depth 1 https://github.com/FT-Labs/picom && cd picom
 git submodule update --init --recursive
 meson setup --buildtype=release . build
