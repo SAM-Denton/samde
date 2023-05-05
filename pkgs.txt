@@ -3,7 +3,6 @@ ttf-hack
 ttf-nerd-fonts-symbols
 git
 man
-slock
 rsync
 libxft
 xwallpaper

@@ -37,6 +37,10 @@ do
     sudo make install -C $HOME/.local/src/$i
 done
 
+git clone --depth 1 https://gitlab.com/samdenton/slock.git $HOME/.local/src/slock
+sed -i 's/sam/'"$USER"'/' $HOME/.local/src/slock/config.def.h
+sudo make install -C $HOME/.local/src/slock
+
 # Install the yay AUR helper
 git clone https://aur.archlinux.org/yay-bin
 cd yay-bin && makepkg -si && cd .. && rm -rf yay-bin
