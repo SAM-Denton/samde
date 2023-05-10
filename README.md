@@ -2,36 +2,39 @@
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/luna.jpg">
 
 ## Introduction
-This is an Arch Linux post installation script that installs my desktop environment that is comprised of custom builds of [suckless](https://suckless.org/) software: [dwm](https://gitlab.com/SamDenton/dwm), [dmenu](https://gitlab.com/SamDenton/dmenu), [st](https://gitlab.com/SamDenton/st) , [dnote](https://gitlab.com/SamDenton/dnote) and [slstatus](https://gitlab.com/SamDenton/slstatus). The script also installs my dotfiles and the programs I use.
+This is an Arch Linux post installation script that installs my desktop environment that is comprised of custom builds of [suckless](https://suckless.org/) software: [dwm](https://gitlab.com/SamDenton/dwm), [dmenu](https://gitlab.com/SamDenton/dmenu), [st](https://gitlab.com/SamDenton/st) , [dnote](https://gitlab.com/SamDenton/dnote) [slstatus](https://gitlab.com/SamDenton/slstatus) and [slock](https://gitlab.com/SamDenton/slock). The script also installs my dotfiles and the programs I use.
 
 ## Features
 
-### Xresources
-All of my suckless builds support [Xresources](https://gitlab.com/SamDenton/dots/-/blob/master/.config/x11/profiles/1080p.Xresources). This allows settings to be changed on the fly without recompiling.
+### Xresources & monitor profiles
+All the suckless builds have been patched to support Xresources. With this you can change things such as the fonts, colors and pixel sizes on the fly without recompiling.
+
+I've made a few ["monitor profiles"](https://gitlab.com/SamDenton/dots/-/blob/master/.config/x11/profiles) that adjusts the size of the UI for various monitor resolutions and sizes. Use the dmenu-samde script to change monitor profiles.
 
 ### Effortless theming
-You can use my dmenu-samde script to change colorscheme of my suckless builds in a matter of seconds. The colorschemes are loaded from a single Xresources file rather than having to set the colors in multiple config files. A good amount of colorschemes are included in the [x11/colorschemes](https://gitlab.com/SamDenton/dots/-/tree/master/.config/x11/colorschemes) folder from my dotfiles, however if you want more you can get a bunch of colorschemes from : [this github repo](https://github.com/janoamaral/Xresources-themes) and [terminal.sexy](https://terminal.sexy). 
+The suckless builds use colorschemes from Xresources rather than having to set the colors in multiple config files. Colorschemes can be selected with the dmenu-samde script or with the lf file browser (press x to load a colorscheme). 
+
+Many colorscheme files are included in [x11/colorschemes](https://gitlab.com/SamDenton/dots/-/tree/master/.config/x11/colorschemes), however I you want more you can go to : [this github repo](https://github.com/janoamaral/Xresources-themes) and [terminal.sexy](https://terminal.sexy). 
 
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/colorscheme.gif">
 
-### dmenu-samde
+### Dmenu-samde
 
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/menu.png">
 
 This is a dmenu script used to change various system settings. Press super+shift+r to run it.
 
-I'll explain some of the options that I think need an explanation:
-
-- Suckless Toggles : toggle options in my suckless builds , such as gaps, bar padding, etc.
+Here are descriptions of what the options do:
+- Theme selector : Gives a list of themes(rices) to choose from.
+- Color scheme : Gives a list of [colorschemes](https://gitlab.com/SamDenton/dots/-/tree/master/.config/x11/colorschemes) to choose from.
+- Toggles : toggle options in the suckless builds and picom.
 - Font : Gives a list of fonts to pick from. "System Font" changes the dwm bar, dmenu and dnote.
-- Pywal : Uses pywal to generate a colorscheme from the current wallpaper and load it into my suckless builds. 
-- Folder Colors : Sets the folder color for the papirus icon theme.
-- Rounded Corners : Toggles rounded corners in picom.conf.
-- Monitor Profile : Changes the size of ui elements for various screen sizes and resolutions.
-- Reload Desktop : Merges Xresources and reloads all my suckless programs.
+- Pywal : Uses [pywal](https://github.com/dylanaraps/pywal) to generate a colorscheme from the current wallpaper and load it into my suckless builds. 
+- Folder Colors : Gives a list of folder colors for the papirus icon theme.
+- Reload Desktop : Merges Xresources and reloads all the suckless programs.
 
 ### Tag icons
-[Nerdfont](https://www.nerdfonts.com/) icons are used for tags instead of numbers. My build of dwm is configured to have my most used programs automatically open and switch to the appropriate tag. Also vacant tags are greyed out and occupied tags are colored.
+[Nerdfont](https://www.nerdfonts.com/) icons are used for tags instead of numbers. Dwm is configured to have my most used programs automatically open and switch to the appropriate tag. Also vacant tags are greyed out and occupied tags are colored.
 
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/tags.gif">
 
@@ -50,7 +53,7 @@ Sticky windows are windows that are visible on every tag. Programs can be made s
 The scratchpad keybind is super+t, you can adjust the default size by changing the amount of columns and rows of st. You need to merge Xresources and kill the scratchpad window for the change to take effect.
 
 ### Top or centered dmenu
-My dmenu build supports both top and centered options. When on top it matches the padding of the dwm bar and has no border and when centered it has a border.
+The dmenu build supports both top and centered options. 
 
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/dmenu.jpg">
 
