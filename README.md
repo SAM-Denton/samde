@@ -44,6 +44,9 @@ Here are descriptions of what the options do:
 - Tag 4 : Productivity
 - Tag 5 : Games and 2nd productivity tag
 
+### Border colors
+Each program can use one of the 6 bright colors from the selected colorscheme as its border color. The colors are set in the rules array in dwm's [config](https://gitlab.com/SamDenton/dwm/-/blob/master/config.def.h). The way that I have it set up is that the border colors are the same as the tag icon color.
+
 ### Sticky windows
 Sticky windows are windows that are visible on every tag. Programs can be made sticky by default in "rules" in the [dwm config file](https://gitlab.com/SamDenton/dwm/-/blob/master/config.def.h) and you can toggle it off and on with super+backspace.
 
