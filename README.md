@@ -9,10 +9,10 @@ This is an Arch Linux post installation script that installs my desktop environm
 ### Xresources & monitor profiles
 All the suckless builds have been patched to support Xresources. With this you can change things such as the fonts, colors and pixel sizes on the fly without recompiling.
 
-You can select different [monitor profiles](https://gitlab.com/SamDenton/dots/-/blob/master/.config/x11/profiles) with the [dmenu-samde](https://gitlab.com/SamDenton/samde#dmenu-samde) script to change the size of the ui for various screen resolutions and sizes.
+You can select different [monitor profiles](https://gitlab.com/SamDenton/dots/-/blob/master/.config/x11/profiles) with the dmenu-samde script to change the size of the ui for various screen resolutions and sizes.
 
 ### Effortless theming
-The suckless builds use colorschemes from Xresources rather than having to set the colors in multiple config files. Colorschemes can be selected with the [dmenu-samde](https://gitlab.com/SamDenton/samde#dmenu-samde) script or with the lf file browser (press x to load a colorscheme). 
+The suckless builds use colorschemes from Xresources rather than having to set the colors in multiple config files. Colorschemes can be selected with the dmenu-samde script or with the lf file browser (press x to load a colorscheme). 
 
 Many colorscheme files are included in [x11/colorschemes](https://gitlab.com/SamDenton/dots/-/tree/master/.config/x11/colorschemes), however I you want more you can go to : [this github repo](https://github.com/janoamaral/Xresources-themes) and [terminal.sexy](https://terminal.sexy). 
 
