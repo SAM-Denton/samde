@@ -44,7 +44,7 @@ sudo make install -C $HOME/.local/src/slock
 # Install the yay AUR helper
 git clone https://aur.archlinux.org/yay-bin
 cd yay-bin && makepkg -si && cd .. && rm -rf yay-bin
-yay -S devour librewolf-bin
+yay -S librewolf-bin
 
 # Install papirus icon theme and folder colors
 wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR="$HOME/.local/share/icons" sh
