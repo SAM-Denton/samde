@@ -45,6 +45,7 @@ cowsay
 ponysay
 fortune-mod
 
+nsxiv
 mpv
 mpd
 mpc
