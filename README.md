@@ -30,7 +30,7 @@ Here are descriptions of what the options do:
 - Toggles : toggle options in the suckless builds and picom.
 - Font : Gives a list of fonts to pick from. "System Font" changes the dwm bar, dmenu and dnote.
 - Folder Colors : Gives a list of folder colors for the papirus icon theme.
-- Monitor Profile: : Gives a list of monitor profiles to choose from.
+- Monitor Profile : Gives a list of monitor profiles to choose from.
 - Pywal : Uses [pywal](https://github.com/dylanaraps/pywal) to generate a colorscheme from the current wallpaper and load it into my suckless builds. 
 - Reload Desktop : Merges Xresources and reloads all the suckless programs.
 
