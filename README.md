@@ -2,7 +2,7 @@
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/luna.jpg">
 
 ## Introduction
-This is an Arch Linux post installation script that installs my desktop environment that is comprised of custom builds of [suckless](https://suckless.org/) software: [dwm](https://gitlab.com/SamDenton/dwm), [dmenu](https://gitlab.com/SamDenton/dmenu), [st](https://gitlab.com/SamDenton/st) , [dnote](https://gitlab.com/SamDenton/dnote) [slstatus](https://gitlab.com/SamDenton/slstatus) and [slock](https://gitlab.com/SamDenton/slock). The script also installs my dotfiles and the programs I use.
+This is an Arch Linux post installation script that installs a desktop environment that is comprised of custom builds of [suckless](https://suckless.org/) software: [dwm](https://gitlab.com/SamDenton/dwm), [dmenu](https://gitlab.com/SamDenton/dmenu), [st](https://gitlab.com/SamDenton/st) , [dnote](https://gitlab.com/SamDenton/dnote) [slstatus](https://gitlab.com/SamDenton/slstatus) and [slock](https://gitlab.com/SamDenton/slock). The script also installs my dotfiles and the programs I use.
 
 ## Features
 
@@ -14,7 +14,7 @@ You can select different [monitor profiles](https://gitlab.com/SamDenton/dots/-/
 ### Effortless theming
 The suckless builds use colorschemes from Xresources rather than having to set the colors in multiple config files. Colorschemes can be selected with the dmenu-samde script or with the lf file browser (press x to load a colorscheme). 
 
-Many colorscheme files are included in [x11/colorschemes](https://gitlab.com/SamDenton/dots/-/tree/master/.config/x11/colorschemes), however I you want more you can go to : [this github repo](https://github.com/janoamaral/Xresources-themes) and [terminal.sexy](https://terminal.sexy). 
+A bunch of colorscheme files are included in [x11/colorschemes](https://gitlab.com/SamDenton/dots/-/tree/master/.config/x11/colorschemes), however I you want more you can go to : [this github repo](https://github.com/janoamaral/Xresources-themes) and [terminal.sexy](https://terminal.sexy). 
 
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/colorscheme.gif">
 
@@ -29,8 +29,9 @@ Here are descriptions of what the options do:
 - Color scheme : Gives a list of [colorschemes](https://gitlab.com/SamDenton/dots/-/tree/master/.config/x11/colorschemes) to choose from.
 - Toggles : toggle options in the suckless builds and picom.
 - Font : Gives a list of fonts to pick from. "System Font" changes the dwm bar, dmenu and dnote.
-- Pywal : Uses [pywal](https://github.com/dylanaraps/pywal) to generate a colorscheme from the current wallpaper and load it into my suckless builds. 
 - Folder Colors : Gives a list of folder colors for the papirus icon theme.
+- Monitor Profile: : Gives a list of monitor profiles to choose from.
+- Pywal : Uses [pywal](https://github.com/dylanaraps/pywal) to generate a colorscheme from the current wallpaper and load it into my suckless builds. 
 - Reload Desktop : Merges Xresources and reloads all the suckless programs.
 
 ### Tag icons
@@ -109,7 +110,8 @@ Yes, these keybindings are pretty odd, I have my tag keys bound to "asdfg" for e
 | `super + y,u,i,o,p`           | program launch script   |
 | `super + Escape`              | power\_menu             |
 | `super + shift + q`           | xkill                   |
-| `super + control + q`         | reload dwm              |
+| `super + control + q`         | dmenu\_kill             |
+| `super + control + alt + q    | restart dwm             |
 | `super + delete`              | slock                   |
 | `super + c`                   | picom toggle            |
 | `super + control + b`         | dmenu-bluetooth         |
@@ -135,6 +137,7 @@ Yes, these keybindings are pretty odd, I have my tag keys bound to "asdfg" for e
 - Launcher/menu program : [dmenu](https://gitlab.com/SamDenton/dmenu)
 - Status monitor: [slstatus](https://gitlab.com/SamDenton/slstatus)
 - Notification utility : [dnote](https://gitlab.com/SamDenton/dnote)
+- Screen locker: [slock](https://gitlab.com/SamDenton/slock)
 
 ### Other programs
 - Shell: zsh
@@ -148,7 +151,6 @@ Yes, these keybindings are pretty odd, I have my tag keys bound to "asdfg" for e
 - Video player: mpv
 - Music player: ncmpcpp (with mpd+mpc)
 - Wallpaper program: xwallpaper
-- Screen locker: slock
 
 </details>
 
