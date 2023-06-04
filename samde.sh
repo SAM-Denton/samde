@@ -16,7 +16,7 @@ sudo pacman --noconfirm --needed -S - < pkgs.txt || error "Failed to install pac
 
 # Make zsh the default shell
 sudo usermod -s /bin/zsh $USER
-echo "export ZDOTDIR=\"\$HOME\"/.config/zsh" | sudo tee -a /etc/zsh/zshenv
+echo "export ZDOTDIR=\"\$HOME/.config/zsh\"" | sudo tee -a /etc/zsh/zshenv
 touch $HOME/.cache/zsh/history
 
 # Clone dotfiles and put them in .config
