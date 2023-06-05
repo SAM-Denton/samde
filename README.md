@@ -6,31 +6,19 @@ This is an Arch Linux post installation script that installs a desktop environme
 
 ## Features
 
-### Xresources & monitor profiles
-All the suckless builds have been patched to support Xresources. With this you can change things such as the fonts, colors and pixel sizes on the fly without recompiling.
-
-You can select different [monitor profiles](https://gitlab.com/SamDenton/dots/-/blob/master/.config/x11/profiles) with the dmenu-samde script to change the size of the ui for various screen resolutions and sizes.
-
-### Effortless theming
-The suckless builds use colorschemes from Xresources rather than having to set the colors in multiple config files. Colorschemes can be selected with the dmenu-samde script or with the lf file browser (press x to load a colorscheme). 
-
-A bunch of colorscheme files are included in [x11/colorschemes](https://gitlab.com/SamDenton/dots/-/tree/master/.config/x11/colorschemes), however I you want more you can go to : [this github repo](https://github.com/janoamaral/Xresources-themes) and [terminal.sexy](https://terminal.sexy). 
-
-<img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/colorscheme.gif">
-
 ### Dmenu-samde
 
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/menu.png">
 
-This is a dmenu script used to change various system settings. Press super+shift+r to run it.
+This is a dmenu script that can be used to change various system settings, press super+shift+r to run it. Most of the changes are done with Xresources(all the suckless programs have been patched to suppport it).
 
 Here are descriptions of what the options do:
 - Theme selector : Gives a list of themes(rices) to choose from.
-- Color scheme : Gives a list of [colorschemes](https://gitlab.com/SamDenton/dots/-/tree/master/.config/x11/colorschemes) to choose from.
-- Toggles : toggle options in the suckless builds and picom.
+- Color scheme : Gives a list of [colorschemes](https://gitlab.com/SamDenton/dots/-/tree/master/.config/samde/colorschemes) to choose from. If you want more you can go to : [this github repo](https://github.com/janoamaral/Xresources-themes) and [terminal.sexy](https://terminal.sexy). 
+- Toggles : Toggle options in the suckless builds and picom.
 - Font : Gives a list of fonts to pick from. "System Font" changes the dwm bar, dmenu and dnote.
 - Folder Colors : Gives a list of folder colors for the papirus icon theme.
-- Monitor Profile : Gives a list of monitor profiles to choose from.
+- Monitor Profile : Gives a list of ["monitor profiles"](https://gitlab.com/SamDenton/dots/-/tree/master/.config/samde/profiles) to choose from, this changes the UI size for various monitor sizes and resolutions.
 - Pywal : Uses [pywal](https://github.com/dylanaraps/pywal) to generate a colorscheme from the current wallpaper and load it into my suckless builds. 
 - Reload Desktop : Merges Xresources and reloads all the suckless programs.
 
@@ -55,11 +43,6 @@ Sticky windows are windows that are visible on every tag. Programs can be made s
 
 ### Scratchpad
 The scratchpad keybind is super+t, you can adjust the default size by changing the amount of columns and rows of st. You need to merge Xresources and kill the scratchpad window for the change to take effect.
-
-### Top or centered dmenu
-The dmenu build supports both top and centered options. 
-
-<img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/dmenu.jpg">
 
 ## Keybinds
 <details>
@@ -111,7 +94,7 @@ Yes, these keybindings are pretty odd, I have my tag keys bound to "asdfg" for e
 | `super + Escape`              | power\_menu             |
 | `super + shift + q`           | xkill                   |
 | `super + control + q`         | dmenu\_kill             |
-| `super + control + alt + q    | restart dwm             |
+| `super + control + alt + q`   | restart dwm             |
 | `super + delete`              | slock                   |
 | `super + c`                   | picom toggle            |
 | `super + control + b`         | dmenu-bluetooth         |
