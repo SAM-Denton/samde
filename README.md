@@ -69,13 +69,13 @@ The scratchpad keybind is super+t, you can adjust the default size by changing t
 - Music player: ncmpcpp (with mpd+mpc)
 - Wallpaper program: xwallpaper
 
+</details>
+
 ## Keybinds
 <details>
 <summary><b>[Click to reveal]</b></summary>
 
 Yes, these keybindings are pretty odd, I have my tag keys bound to "asdfg" for ergonomics and because I switch tags often. The top row of the keyboard is (mostly) used for launching programs and the home and bottom row is (mostly) used for window manager functions. Like most people I've changed the mod key for dwm to be the super key (aka windows key). 
-
-</details>
 
 ### Window manager keybinds
 | Keybind                     | Action                                |
