@@ -45,9 +45,9 @@ Sticky windows are windows that are visible on every tag. Programs can be made s
 The scratchpad keybind is super+t, you can adjust the default size by changing the amount of columns and rows of st. You need to merge Xresources and kill the scratchpad window for the change to take effect.
 
 ## Default Programs
-
 <details>
 <summary><b>[Click to reveal]</b></summary>
+
 ### My builds of suckless software 
 - Window manager: [dwm](https://gitlab.com/SamDenton/dwm)
 - Terminal emulator : [st](https://gitlab.com/SamDenton/st)
