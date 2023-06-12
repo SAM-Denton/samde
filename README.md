@@ -65,6 +65,7 @@ The scratchpad keybind is super+t, you can adjust the default size by changing t
 - **Video player**: mpv
 - **Music player**: ncmpcpp (with mpd+mpc)
 - **Wallpaper program**: xwallpaper
+- **AUR helper**: yay
 
 ## Keybinds
 The keys are arranged so that the window manager keys are (mostly) on the home and bottom row and the keys to launch programs are on the top row.
