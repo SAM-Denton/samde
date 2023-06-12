@@ -9,7 +9,7 @@ This is an Arch Linux post installation script that installs a desktop environme
 ### Dmenu-samde
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/menu.png">
 
-This is a dmenu script that can be used to change various system settings, press super+shift+r to run it. Most of the settings are done with [Xresources](https://gitlab.com/SamDenton/dots/-/tree/master/.config/samde)
+This is a dmenu script that can be used to change various system settings, press super+shift+r to run it. Most of the settings are done through [Xresources](https://gitlab.com/SamDenton/dots/-/tree/master/.config/samde).
 
 Here's some information on the options:
 - Theme selector: The "themes" are also known as "rices".
@@ -128,9 +128,9 @@ The keys are arranged so that the window manager keys are (mostly) on the home a
 | `brightness {down,up}`        | adjust brightness       |
 
 ## Installation
-This script is intended to be ran in a fresh install of Arch linux with no display manager(gui login screen). I use this script after using archinstall with the "xorg" profile selected.
+This script is intended to be ran after using archinstall with the "xorg" profile.
 
-**Run this script as a regular user.**
+**Run this script as a regular user(not root).**
 ```
 git clone --depth 1 https://gitlab.com/SamDenton/samde.git
 cd samde
