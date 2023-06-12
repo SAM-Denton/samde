@@ -46,25 +46,25 @@ The scratchpad keybind is super+t, you can adjust the default size by changing t
 ## Default Programs
 
 ### My builds of suckless software 
-- Window manager: [dwm](https://gitlab.com/SamDenton/dwm)
-- Terminal emulator : [st](https://gitlab.com/SamDenton/st)
-- Launcher/menu program : [dmenu](https://gitlab.com/SamDenton/dmenu)
-- Status monitor: [slstatus](https://gitlab.com/SamDenton/slstatus)
-- Notification utility : [dnote](https://gitlab.com/SamDenton/dnote)
-- Screen locker: [slock](https://gitlab.com/SamDenton/slock)
+- **Window manager**: [dwm](https://gitlab.com/SamDenton/dwm)
+- **Terminal emulator**: [st](https://gitlab.com/SamDenton/st)
+- **Launcher/menu program**: [dmenu](https://gitlab.com/SamDenton/dmenu)
+- **Status monitor**: [slstatus](https://gitlab.com/SamDenton/slstatus)
+- **Notification utility**: [dnote](https://gitlab.com/SamDenton/dnote)
+- **Screen locker**: [slock](https://gitlab.com/SamDenton/slock)
 
 ### Other programs
-- Shell: zsh
-- Prompt: starship
-- Editor: neovim
-- Compositor: [picom (FT-Labs fork)](https://github.com/FT-Labs/picom)
-- TUI file manager: lf
-- GUI file manager: thunar
-- Web browser: librewolf
-- Image viewer: nsxiv
-- Video player: mpv
-- Music player: ncmpcpp (with mpd+mpc)
-- Wallpaper program: xwallpaper
+- **Shell**: zsh
+- **Prompt**: starship
+- **Editor**: neovim
+- **Compositor**: [picom (FT-Labs fork)](https://github.com/FT-Labs/picom)
+- **TUI file manager**: lf
+- **GUI file manager**: thunar
+- **Web browser**: librewolf
+- **Image viewer**: nsxiv
+- **Video player**: mpv
+- **Music player**: ncmpcpp (with mpd+mpc)
+- **Wallpaper program**: xwallpaper
 
 ## Keybinds
 
