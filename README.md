@@ -33,7 +33,7 @@ Here's some information on the options:
 - **Tag 5**: Games and 2nd productivity tag
 
 ### Border colors
-Each program can use one of the 6 bright colors from the selected colorscheme as its border color. The colors are set in the rules array in dwm's [config](https://gitlab.com/SamDenton/dwm/-/blob/master/config.def.h). The way that I have it set up is that the border colors are the same as the tag icon color.
+Each program can use one of the 6 bright colors from the selected colorscheme as its border color. The colors are set in the rules array in dwm's [config](https://gitlab.com/SamDenton/dwm/-/blob/master/config.def.h). The way that it is set up is that the border colors are the same as the tag icon color.
 
 ### Sticky windows
 Sticky windows are windows that are visible on every tag. Programs can be made sticky by default in "rules" in the [dwm config file](https://gitlab.com/SamDenton/dwm/-/blob/master/config.def.h) and you can toggle it off and on with super+backspace.
@@ -45,7 +45,7 @@ The scratchpad keybind is super+t, you can adjust the default size by changing t
 
 ## Default Programs
 
-### My builds of suckless software 
+### Suckless software
 - **Window manager**: [dwm](https://gitlab.com/SamDenton/dwm)
 - **Terminal emulator**: [st](https://gitlab.com/SamDenton/st)
 - **Launcher/menu program**: [dmenu](https://gitlab.com/SamDenton/dmenu)
@@ -67,7 +67,6 @@ The scratchpad keybind is super+t, you can adjust the default size by changing t
 - **Wallpaper program**: xwallpaper
 
 ## Keybinds
-
 The keys are arranged so that the window manager keys are (mostly) on the home and bottom row and the keys to launch programs are on the top row.
 
 ### Window manager keybinds
