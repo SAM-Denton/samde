@@ -12,25 +12,25 @@ This is an Arch Linux post installation script that installs a desktop environme
 This is a dmenu script that can be used to change various system settings, press super+shift+r to run it. Most of the settings are done through [Xresources](https://gitlab.com/SamDenton/dots/-/tree/master/.config/samde).
 
 Here's some information on the options:
-- Theme selector: The "themes" are also known as "rices".
-- Color scheme: If you want more [colorschemes](https://gitlab.com/SamDenton/dots/-/tree/master/.config/samde/colorschemes) you can go to : [this github repo](https://github.com/janoamaral/Xresources-themes) and [terminal.sexy](https://terminal.sexy).
-- Toggles: Toggle options for the suckless builds and picom.
-- Font: This will list all the fonts that are installed. "System Font" changes the dwm bar, dmenu and dnote.
-- Folder Colors: This changes the color of the folders for the papirus icon theme.
-- Monitor Profile: The ["monitor profiles"](https://gitlab.com/SamDenton/dots/-/tree/master/.config/samde/profiles) are settings for the UI size for various monitor sizes and resolutions.
-- Pywal: Uses [pywal](https://github.com/dylanaraps/pywal) to generate a colorscheme from the current wallpaper.
-- Reload Desktop: Merges Xresources and reloads all the suckless programs.
+- **Theme selector**: The "themes" are also known as "rices".
+- **Color scheme**: If you want more [colorschemes](https://gitlab.com/SamDenton/dots/-/tree/master/.config/samde/colorschemes) you can go to: [this github repo](https://github.com/janoamaral/Xresources-themes) and [terminal.sexy](https://terminal.sexy).
+- **Toggles**: Toggle options for the suckless builds and picom.
+- **Font**: This will list all the fonts that are installed. "System Font" changes the dwm bar, dmenu and dnote.
+- **Folder Colors**: This changes the color of the folders for the papirus icon theme.
+- **Monitor Profile**: The ["monitor profiles"](https://gitlab.com/SamDenton/dots/-/tree/master/.config/samde/profiles) are settings for the UI size for various monitor sizes and resolutions.
+- **Pywal**: Uses [pywal](https://github.com/dylanaraps/pywal) to generate a colorscheme from the current wallpaper.
+- **Reload Desktop**: Merges Xresources and reloads all the suckless programs.
 
 ### Tag icons
 [Nerdfont](https://www.nerdfonts.com/) icons are used for tags instead of numbers. Dwm is configured to have my most used programs automatically open and switch to the appropriate tag. Also vacant tags are greyed out and occupied tags are colored.
 
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/tags.gif">
 
-- Tag 1: Web browser
-- Tag 2: Terminal emulator
-- Tag 3: File manager
-- Tag 4: Productivity
-- Tag 5: Games and 2nd productivity tag
+- **Tag 1**: Web browser
+- **Tag 2**: Terminal emulator
+- **Tag 3**: File manager
+- **Tag 4**: Productivity
+- **Tag 5**: Games and 2nd productivity tag
 
 ### Border colors
 Each program can use one of the 6 bright colors from the selected colorscheme as its border color. The colors are set in the rules array in dwm's [config](https://gitlab.com/SamDenton/dwm/-/blob/master/config.def.h). The way that I have it set up is that the border colors are the same as the tag icon color.
