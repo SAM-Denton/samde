@@ -24,11 +24,11 @@ git clone --depth 1 --separate-git-dir=$HOME/.config/.dots https://gitlab.com/sa
 rsync --recursive --verbose --exclude '.git' tmpdots/ $HOME/
 rm -rf tmpdots
 /usr/bin/git --git-dir=$HOME/.config/.dots --work-tree=$HOME config --local status.showUntrackedFiles no
-ln -sf $HOME/.config/x11/profiles/1080p.Xresources $HOME/.config/x11/xresources
-ln -sf $HOME/.config/x11/colorschemes/Luna.Xresources $HOME/.config/x11/xcolors
+ln -sf $HOME/.config/samde/profiles/1080p.Xresources $HOME/.config/samde/xresources
+ln -sf $HOME/.config/samde/colorschemes/Luna.Xresources $HOME/.config/samde/xcolors
 
 git clone --depth 1 https://gitlab.com/samdenton/wallpapers.git $HOME/.local/share/wallpapers
-ln -sf $HOME/.local/share/wallpapers/Luna.png $HOME/.config/x11/wall
+ln -sf $HOME/.local/share/wallpapers/Luna.png $HOME/.config/samde/wall
 
 # Clone suckless utilities and compile
 for i in "${utils[@]}"
@@ -81,7 +81,7 @@ while true ; do
         read -p "Are you installing this in a virtual machine? (y/n): " answer
     case $answer in
         
-        y) sed -i '/picom/s/^/#/g' $HOME/.config/x11/xinitrc
+        y) sed -i '/picom/s/^/#/g' $HOME/.config/samde/xinitrc
            echo "Disabled picom. Picom doesn't seem to work in virtual machines"
            break;;
 
