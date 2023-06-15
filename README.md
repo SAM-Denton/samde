@@ -70,7 +70,7 @@ The scratchpad keybind is super+t, you can adjust the default size by changing t
 ## Keybinds
 <details>
 <summary><b>[Click to reveal]</b></summary>
-
+<br>
 The keys are arranged so that the window manager keys are (mostly) on the home and bottom row and the keys to launch programs are on the top row.
 
 ### Window manager keybinds
