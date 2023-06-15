@@ -67,10 +67,10 @@ The scratchpad keybind is super+t, you can adjust the default size by changing t
 - **Wallpaper program**: xwallpaper
 - **AUR helper**: yay
 
+## Keybinds
 <details>
 <summary><b>[Click to reveal]</b></summary>
 
-## Keybinds
 The keys are arranged so that the window manager keys are (mostly) on the home and bottom row and the keys to launch programs are on the top row.
 
 ### Window manager keybinds
