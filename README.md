@@ -67,6 +67,9 @@ The scratchpad keybind is super+t, you can adjust the default size by changing t
 - **Wallpaper program**: xwallpaper
 - **AUR helper**: yay
 
+<details>
+<summary><b>[Click to reveal]</b></summary>
+
 ## Keybinds
 The keys are arranged so that the window manager keys are (mostly) on the home and bottom row and the keys to launch programs are on the top row.
 
@@ -126,6 +129,8 @@ The keys are arranged so that the window manager keys are (mostly) on the home a
 | `super + shift + audio play`  | show current track(mpd) |
 | `shift + audio {prev,next}`   | mpc seek(rewind,foward) |
 | `brightness {down,up}`        | adjust brightness       |
+
+</details>
 
 ## Installation
 This script is intended to be ran after using archinstall with the "xorg" profile.
