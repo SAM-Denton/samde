@@ -2,7 +2,7 @@
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/luna.jpg">
 
 ## Introduction
-This is an Arch Linux post installation script that installs a desktop environment that uses of custom builds of [suckless](https://suckless.org) software: [dwm](https://gitlab.com/SamDenton/dwm), [dmenu](https://gitlab.com/SamDenton/dmenu), [st](https://gitlab.com/SamDenton/st) , [dnote](https://gitlab.com/SamDenton/dnote) [slstatus](https://gitlab.com/SamDenton/slstatus) and [slock](https://gitlab.com/SamDenton/slock). The vision for this project is to be functional, easy to configure and aesthetically pleasing.
+This is an Arch Linux post installation script that installs a desktop environment that uses of custom builds of [suckless](https://suckless.org) software: [dwm](https://gitlab.com/SamDenton/dwm), [dmenu](https://gitlab.com/SamDenton/dmenu), [st](https://gitlab.com/SamDenton/st) , [dnote](https://gitlab.com/SamDenton/dnote) [slstatus](https://gitlab.com/SamDenton/slstatus) and [slock](https://gitlab.com/SamDenton/slock). The script also installs my [dofiles](https://gitlab.com/SamDenton/dots).
 
 ## Features
 
@@ -135,7 +135,7 @@ The keys are arranged so that the window manager keys are (mostly) on the home a
 ## Installation
 This script is intended to be ran after using archinstall with the "xorg" profile.
 
-**Run this script as a regular user(not root).**
+**Run this script as a user with sudo privileges.**
 ```
 git clone --depth 1 https://gitlab.com/SamDenton/samde.git
 cd samde
