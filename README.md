@@ -33,10 +33,10 @@ Here's some information on the options:
 - **Tag 5**: Games and 2nd productivity tag
 
 ### Border colors
-Each program can use one of the 6 bright colors from the selected color scheme as its border color. The colors are set in the rules array in dwm's [config](https://gitlab.com/SamDenton/dwm/-/blob/master/config.def.h). The way that it is set up is that the border colors are the same as the tag icon color.
+Border colors are set in dwm's [config](https://gitlab.com/SamDenton/dwm/-/blob/master/config.def.h) file. It's configured to have the border colors match the tag icon color.
 
 ### Sticky windows
-Sticky windows are windows that are visible on every tag. Programs can be made sticky by default in "rules" in the [dwm config file](https://gitlab.com/SamDenton/dwm/-/blob/master/config.def.h) and it can toggled off and on with super+backspace.
+Sticky windows are windows that are visible on every tag, it can toggled off and on with super+backspace. Programs can be made sticky by default in dwm's [config](https://gitlab.com/SamDenton/dwm/-/blob/master/config.def.h) file.
 
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/sticky.gif">
 
@@ -121,7 +121,7 @@ The keys are arranged so that the window manager keys are (mostly) on the home a
 | `super + delete`              | slock                   |
 | `super + c`                   | picom toggle            |
 | `super + control + b`         | dmenu-bluetooth         |
-| `super + control + t`         | theme-selector          |
+| `super + control + t`         | theme selector          |
 | `super + control + c`         | color scheme selector   |
 | `audio {mute,lower,raise}`    | adjust volume           |
 | `shift + audio {lower,raise}` | adjust mpd volume       |
