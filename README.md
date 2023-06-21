@@ -2,7 +2,7 @@
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/luna.jpg">
 
 ## Introduction
-This is an Arch Linux post installation script that installs a desktop environment that uses of custom builds of [suckless](https://suckless.org) software: [dwm](https://gitlab.com/SamDenton/dwm), [dmenu](https://gitlab.com/SamDenton/dmenu), [st](https://gitlab.com/SamDenton/st) , [dnote](https://gitlab.com/SamDenton/dnote) [slstatus](https://gitlab.com/SamDenton/slstatus) and [slock](https://gitlab.com/SamDenton/slock). The script also installs my [dofiles](https://gitlab.com/SamDenton/dots).
+This is an Arch Linux post installation script that installs my desktop environment that uses of custom builds of [suckless](https://suckless.org) software: [dwm](https://gitlab.com/SamDenton/dwm), [dmenu](https://gitlab.com/SamDenton/dmenu), [st](https://gitlab.com/SamDenton/st) , [dnote](https://gitlab.com/SamDenton/dnote) [slstatus](https://gitlab.com/SamDenton/slstatus) and [slock](https://gitlab.com/SamDenton/slock). Additionally this script installs my [dotfiles](https://gitlab.com/SamDenton/dots), [themes](https://gitlab.com/SamDenton/themes) and my favorite programs.
 
 ## Features
 
@@ -13,12 +13,12 @@ This is a dmenu script that can be used to change various system settings, press
 
 Here's some information on the options:
 - **Theme selector**: The "themes" are also known as "rices".
-- **Color scheme**: If you want more [colorschemes](https://gitlab.com/SamDenton/dots/-/tree/master/.config/samde/colorschemes) you can go to: [this github repo](https://github.com/janoamaral/Xresources-themes) and [terminal.sexy](https://terminal.sexy).
+- **Color scheme**: This changes the color scheme for all the suckless builds and any other program that supports Xresources. If you want more [color schemes](https://gitlab.com/SamDenton/dots/-/tree/master/.config/samde/colorschemes) you can go to: [this github repo](https://github.com/janoamaral/Xresources-themes) and [terminal.sexy](https://terminal.sexy).
 - **Toggles**: Toggle options for the suckless builds and picom.
 - **Font**: This will list all the fonts that are installed. "System Font" changes the dwm bar, dmenu and dnote.
 - **Folder Colors**: This changes the color of the folders for the papirus icon theme.
 - **Monitor Profile**: The ["monitor profiles"](https://gitlab.com/SamDenton/dots/-/tree/master/.config/samde/profiles) are settings for the UI size for various monitor sizes and resolutions.
-- **Pywal**: Uses [pywal](https://github.com/dylanaraps/pywal) to generate a colorscheme from the current wallpaper.
+- **Pywal**: Uses [pywal](https://github.com/dylanaraps/pywal) to generate a color scheme from the current wallpaper.
 - **Reload Desktop**: Merges Xresources and reloads all the suckless programs.
 
 ### Tag icons
@@ -33,7 +33,7 @@ Here's some information on the options:
 - **Tag 5**: Games and 2nd productivity tag
 
 ### Border colors
-Each program can use one of the 6 bright colors from the selected colorscheme as its border color. The colors are set in the rules array in dwm's [config](https://gitlab.com/SamDenton/dwm/-/blob/master/config.def.h). The way that it is set up is that the border colors are the same as the tag icon color.
+Each program can use one of the 6 bright colors from the selected color scheme as its border color. The colors are set in the rules array in dwm's [config](https://gitlab.com/SamDenton/dwm/-/blob/master/config.def.h). The way that it is set up is that the border colors are the same as the tag icon color.
 
 ### Sticky windows
 Sticky windows are windows that are visible on every tag. Programs can be made sticky by default in "rules" in the [dwm config file](https://gitlab.com/SamDenton/dwm/-/blob/master/config.def.h) and you can toggle it off and on with super+backspace.
@@ -43,7 +43,7 @@ Sticky windows are windows that are visible on every tag. Programs can be made s
 ### Scratchpad
 The scratchpad keybind is super+t, you can adjust the default size by changing the amount of columns and rows of st. You need to merge Xresources and kill the scratchpad window for the change to take effect.
 
-## Default Programs
+## Programs
 
 ### Suckless software
 - **Window manager**: [dwm](https://gitlab.com/SamDenton/dwm)
@@ -122,7 +122,7 @@ The keys are arranged so that the window manager keys are (mostly) on the home a
 | `super + c`                   | picom toggle            |
 | `super + control + b`         | dmenu-bluetooth         |
 | `super + control + t`         | theme-selector          |
-| `super + control + c`         | colorscheme-selector    |
+| `super + control + c`         | color scheme selector   |
 | `audio {mute,lower,raise}`    | adjust volume           |
 | `shift + audio {lower,raise}` | adjust mpd volume       |
 | `audio {prev,play,next}`      | mpc prev,toggle,next    |
