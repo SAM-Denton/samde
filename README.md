@@ -2,7 +2,7 @@
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/luna.jpg">
 
 ## Introduction
-This is an Arch Linux post installation script that installs my desktop environment that uses of custom builds of [suckless](https://suckless.org) software: [dwm](https://gitlab.com/SamDenton/dwm), [dmenu](https://gitlab.com/SamDenton/dmenu), [st](https://gitlab.com/SamDenton/st) , [dnote](https://gitlab.com/SamDenton/dnote) [slstatus](https://gitlab.com/SamDenton/slstatus) and [slock](https://gitlab.com/SamDenton/slock). Additionally this script installs my [dotfiles](https://gitlab.com/SamDenton/dots), [themes](https://gitlab.com/SamDenton/themes) and my favorite programs.
+This is an Arch Linux post installation script that installs my desktop environment that uses of custom builds of [suckless](https://suckless.org) software: [dwm](https://gitlab.com/SamDenton/dwm), [dmenu](https://gitlab.com/SamDenton/dmenu), [st](https://gitlab.com/SamDenton/st) , [dnote](https://gitlab.com/SamDenton/dnote) [slstatus](https://gitlab.com/SamDenton/slstatus) and [slock](https://gitlab.com/SamDenton/slock). Additionally this script installs my [dotfiles](https://gitlab.com/SamDenton/dots), [gtk themes](https://gitlab.com/SamDenton/themes) and my favorite programs.
 
 ## Features
 
