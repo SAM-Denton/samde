@@ -82,6 +82,7 @@ while true ; do
     case $answer in
         
         y) sed -i '/picom/s/^/#/g' $HOME/.config/samde/xinitrc
+           sed -i 's/xwallpaper/& --daemon/' $HOME/.config/samde/xinitrc
            echo "Disabled picom. Picom doesn't seem to work in virtual machines"
            break;;
 
