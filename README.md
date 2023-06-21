@@ -14,15 +14,15 @@ This is a dmenu script that can be used to change various system settings, press
 Here's some information on the options:
 - **Theme selector**: The "themes" are also known as "rices".
 - **Color scheme**: This changes the color scheme for all the suckless builds and any other program that supports Xresources. If you want more [color schemes](https://gitlab.com/SamDenton/dots/-/tree/master/.config/samde/colorschemes) you can go to: [this github repo](https://github.com/janoamaral/Xresources-themes) and [terminal.sexy](https://terminal.sexy).
-- **Toggles**: Toggle options for the suckless builds and picom.
-- **Font**: This will list all the fonts that are installed. "System Font" changes the dwm bar, dmenu and dnote.
-- **Folder Colors**: This changes the color of the folders for the papirus icon theme.
-- **Monitor Profile**: The ["monitor profiles"](https://gitlab.com/SamDenton/dots/-/tree/master/.config/samde/profiles) are settings for the UI size for various monitor sizes and resolutions.
+- **Toggles**: It presents a list of togglable options for the suckless builds and picom.
+- **Font**: This lists all the fonts that are installed. "System Font" changes the dwm bar, dmenu and dnote.
+- **Folder Colors**: This changes the folder colors in the papirus icon theme.
+- **Monitor Profile**: The ["monitor profiles"](https://gitlab.com/SamDenton/dots/-/tree/master/.config/samde/profiles) are config files for various monitor sizes and resolutions.
 - **Pywal**: Uses [pywal](https://github.com/dylanaraps/pywal) to generate a color scheme from the current wallpaper.
 - **Reload Desktop**: Merges Xresources and reloads all the suckless programs.
 
 ### Tag icons
-[Nerdfont](https://www.nerdfonts.com/) icons are used for tags instead of numbers. Dwm is configured to have my most used programs automatically open and switch to the appropriate tag. Also vacant tags are greyed out and occupied tags are colored.
+[Nerdfont](https://www.nerdfonts.com/) icons are used for tags instead of numbers. Dwm is configured to have my most used programs automatically open and switch to the appropriate tag. Tags that are being used are colored and the ones that are vacant are greyed out.
 
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/tags.gif">
 
@@ -36,12 +36,12 @@ Here's some information on the options:
 Each program can use one of the 6 bright colors from the selected color scheme as its border color. The colors are set in the rules array in dwm's [config](https://gitlab.com/SamDenton/dwm/-/blob/master/config.def.h). The way that it is set up is that the border colors are the same as the tag icon color.
 
 ### Sticky windows
-Sticky windows are windows that are visible on every tag. Programs can be made sticky by default in "rules" in the [dwm config file](https://gitlab.com/SamDenton/dwm/-/blob/master/config.def.h) and you can toggle it off and on with super+backspace.
+Sticky windows are windows that are visible on every tag. Programs can be made sticky by default in "rules" in the [dwm config file](https://gitlab.com/SamDenton/dwm/-/blob/master/config.def.h) and it can toggled off and on with super+backspace.
 
 <img src="https://gitlab.com/SamDenton/screenshots/-/raw/master/sticky.gif">
 
 ### Scratchpad
-The scratchpad keybind is super+t, you can adjust the default size by changing the amount of columns and rows of st. You need to merge Xresources and kill the scratchpad window for the change to take effect.
+The scratchpad keybind is super+t. The default size can be adjusted by changing the default number of columns and rows in the [monitor profile](https://gitlab.com/SamDenton/dots/-/tree/master/.config/samde/profiles) that is being used. Kill the scratchpad window and reload Xresources for the change to take effect.
 
 ## Programs
 
@@ -133,7 +133,7 @@ The keys are arranged so that the window manager keys are (mostly) on the home a
 </details>
 
 ## Installation
-This script is intended to be ran after using archinstall with the "xorg" profile.
+Use this script after installing Arch with archinstall. Select the "xorg" profile in archinstall.
 
 **Run this script as a user with sudo privileges.**
 ```
@@ -143,7 +143,7 @@ cd samde
 ```
 
 ## Credit
-This was mainly inspired by [LARBS](https://larbs.xyz/), [DTOS](https://gitlab.com/dtos/dtos) and [chadwm](https://github.com/siduck/chadwm).
+This is inspired by [LARBS](https://larbs.xyz/), [DTOS](https://gitlab.com/dtos/dtos) and [chadwm](https://github.com/siduck/chadwm).
 
 I would like to give big thank you to suckless and all the people who've made patches for the suckless programs.
 
