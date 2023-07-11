@@ -9,7 +9,7 @@ This is an Arch Linux post installation script that installs my desktop environm
 ### Dmenu-samde
 ![dmenu-samde](https://gitlab.com/SamDenton/screenshots/-/raw/master/menu.png)
 
-This is a dmenu script that can be used to change various system settings, press super+ctrl+r to run it. Most of the settings are done through [Xresources](https://gitlab.com/SamDenton/dots/-/tree/master/.config/samde).
+This is a dmenu script that can be used to change various system settings, press `super+ctrl+r` to run it. Most of the changes are done through [Xresources](https://gitlab.com/SamDenton/dots/-/tree/master/.config/samde).
 
 Here's some information on the options:
 - **Theme selector**: The "themes" are also known as "rices".
@@ -36,12 +36,12 @@ Here's some information on the options:
 Border colors are set in dwm's [config](https://gitlab.com/SamDenton/dwm/-/blob/master/config.def.h) file. It's configured to have the border colors match the tag icon color.
 
 ### Sticky windows
-Sticky windows are windows that are visible on every tag, it can toggled off and on with super+backspace. Programs can be made sticky by default in dwm's [config](https://gitlab.com/SamDenton/dwm/-/blob/master/config.def.h) file.
+Sticky windows are windows that are visible on every tag, it can toggled off and on with `super+backspace`. Programs can be made sticky by default in dwm's [config](https://gitlab.com/SamDenton/dwm/-/blob/master/config.def.h) file.
 
 ![sticky](https://gitlab.com/SamDenton/screenshots/-/raw/master/sticky.gif)
 
 ### Scratchpad
-The scratchpad keybind is super+t. The default size can be adjusted by changing the default number of columns and rows in the [monitor profile](https://gitlab.com/SamDenton/dots/-/tree/master/.config/samde/profiles) that is being used. Kill the scratchpad window and reload Xresources for the change to take effect.
+The scratchpad keybind is `super+t`. The default size can be adjusted by changing the default number of columns and rows in the [monitor profile](https://gitlab.com/SamDenton/dots/-/tree/master/.config/samde/profiles) that is being used. Kill the scratchpad window and reload Xresources for the change to take effect.
 
 ## Programs
 
