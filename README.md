@@ -9,7 +9,7 @@ This is an Arch Linux post installation script that installs my desktop environm
 ### Dmenu-samde
 ![dmenu-samde](https://gitlab.com/SamDenton/screenshots/-/raw/master/menu.png)
 
-This is a dmenu script that can be used to change various system settings, press super+shift+r to run it. Most of the settings are done through [Xresources](https://gitlab.com/SamDenton/dots/-/tree/master/.config/samde).
+This is a dmenu script that can be used to change various system settings, press super+ctrl+r to run it. Most of the settings are done through [Xresources](https://gitlab.com/SamDenton/dots/-/tree/master/.config/samde).
 
 Here's some information on the options:
 - **Theme selector**: The "themes" are also known as "rices".
@@ -112,7 +112,7 @@ The keys are arranged so that the window manager keys are (mostly) on the home a
 | `super + shift + e`           | lf                      |
 | `super + control + e`         | dmenu-open              |
 | `super + r`                   | dmenu\_run              |
-| `super + shift + r`           | dmenu-samde             |
+| `super + ctrl + r`            | dmenu-samde             |
 | `super + y,u,i,o,p`           | program launch script   |
 | `super + Escape`              | power\_menu             |
 | `super + shift + q`           | xkill                   |
