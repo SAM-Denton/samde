@@ -40,7 +40,7 @@ Border colors are set in dwm's [config](https://gitlab.com/SamDenton/dwm/-/blob/
 ### Sticky windows
 Sticky windows are windows that are visible on every tag, it can toggled off and on with `super+backspace`. Programs can be made sticky by default in dwm's [config](https://gitlab.com/SamDenton/dwm/-/blob/master/config.def.h) file.
 
-![sticky](https://gitlab.com/SamDenton/samde/-/raw/master/screeenshots/sticky.gif)
+![sticky](https://gitlab.com/SamDenton/samde/-/raw/master/screenshots/sticky.gif)
 
 ### Scratchpad
 The scratchpad keybind is `super+t`. The default size can be adjusted by changing the default number of columns and rows in the [monitor profile](https://gitlab.com/SamDenton/dots/-/tree/master/.config/samde/profiles) that is being used. Kill the scratchpad window and reload Xresources for the change to take effect.
